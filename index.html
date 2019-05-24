@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An user friendly dashboard">        
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+        <title>BJ&minus;Design&apos;s Dashboard</title>
+    </head>
+    <body class="grid_wrapper">
+    <!------------------------------------------HEADER CONTENT------------------------------------------------->
+        <header>
+            <h1>Brian&apos;s App</h1>
+            <div>
+                <div class="alert" id="alert">
+
+                </div>
+            </div>
+            <img src="images/profile_picBJ.jpg" alt="profile picture">
+            <h3></h3>
+        </header>
+    <!------------------------------------------NAVIGATIONAL CONTENT------------------------------------------------->
+        <nav>
+            <a class="dashboard_icon" href=""><img src="icons/icon-dashboard.svg" alt=""></a>
+            <a class="member_icon" href=""><img src="icons/icon-members.svg" alt=""></a>
+            <a class="visits_icon" href=""><img src="icons/icon-visits.svg" alt=""></a>
+            <a class="settings_icon" href=""><img src="icons/icon-settings.svg" alt=""></a>
+        </nav>
+    <!------------------------------------------MAIN CONTENT------------------------------------------------->
+        <main>
+            <section class="main-header">
+                <h2>Dashboard</h2>
+                <div class="dboard">
+                     <input type="search" name="search" id="search_content">
+                </div>
+            </section>
+
+            <section class="traffic">
+                <div class="traffic-header">
+                  <h3>Traffic</h3>
+                  <ul class="traffic-nav">
+                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link">Daily</li>
+                    <li class="traffic-nav-link active">Weekly</li>
+                    <li class="traffic-nav-link">Monthly</li>
+                  </ul>
+                </div>
+                <div class="widget-container-full">
+                <!-- element line graph will attach to -->
+                <canvas id="traffic-chart"></canvas>
+                </div>
+            </section>
+
+            <section class="daily">
+                 <h3>Daily Traffic</h3>
+                    <div class="widget-container-half">
+                        <!-- element bar graph will attach to -->
+                        <canvas id="daily-chart"></canvas>
+                    </div>
+            </section>
+
+            <section class="mobile">
+                 <h3>Mobile Users </h3>
+                    <div class="widget-container-half">
+                        <!-- element bar graph will attach to -->
+                        <canvas id="doughnut-chart"></canvas>
+                    </div>
+               </section>
+                    
+            <div class="social-container">
+                <h3>Social Stats</h3>
+                <div class="social-twitter">
+                  <!-- inline SVG not included for brevity -->
+                </div>
+                <div class="twitter-text">
+                    <p>Twitter</p>
+                    <p>10,345</p>
+                </div>
+                <div class="social-facebookr">
+                  <!-- inline SVG not included for brevity -->
+                </div>
+                <div class="facebook-text">
+                    <p>Facebook</p>
+                    <p>8,739</p>
+                </div>
+                <div class="social-google">
+                  <!-- inline SVG not included for brevity -->
+                </div>
+                <div class="google-text">
+                    <p>Google</p>
+                    <p>2,530</p>
+               </div>
+            </div>
+            <section class="new-members">
+                <h3>New Members</h3>
+                <div class="members-container">
+                  <img src="images/member-1.jpg"class="profile-image">
+                  <div class="members-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chambers80@example.com</a>
+                  </div>
+                  <p>10/15/15</p>
+                </div>
+                <div class="members-container">
+                    <img src="images/member-2.jpg"class="profile-image">
+                    <div class="members-text">
+                      <p>Dale Byrd</p>
+                      <a href="#">dale.byrd52@example.com</a>
+                    </div>
+                    <p>10/15/16</p>
+                 </div>
+                 <div class="members-container">
+                     <img src="images/member-3.jpg"class="profile-image">
+                     <div class="members-text">
+                       <p>Dawn Wood</p>
+                       <a href="#">dawn.wood16@example.com</a>
+                     </div>
+                     <p>10/15/17</p>
+                 </div>
+                 <div class="members-container">
+                     <img src="images/member-4.jpg"class="profile-image">
+                     <div class="members-text">
+                       <p>Dan Oliver</p>
+                       <a href="#">dan.oliver82@example.com</a>
+                     </div>
+                     <p>10/15/16</p>
+                 </div>
+            </section>
+
+            <section class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="members-container">
+                  <img src="images/member-1.jpg"class="profile-image">
+                  <div class="members-text">
+                    <p>Victoria Chambers</p>
+                    <a href="#">victoria.chambers80@example.com</a>
+                  </div>
+                  <p>10/15/15</p>
+                </div>
+                <div class="members-container">
+                    <img src="images/member-2.jpg"class="profile-image">
+                    <div class="members-text">
+                      <p>Dale Byrd</p>
+                      <a href="#">dale.byrd52@example.com</a>
+                    </div>
+                    <p>10/15/16</p>
+                 </div>
+                 <div class="members-container">
+                     <img src="images/member-3.jpg"class="profile-image">
+                     <div class="members-text">
+                       <p>Dawn Wood</p>
+                       <a href="#">dawn.wood16@example.com</a>
+                     </div>
+                     <p>10/15/17</p>
+                 </div>
+                 <div class="members-container">
+                     <img src="images/member-4.jpg"class="profile-image">
+                     <div class="members-text">
+                       <p>Dan Oliver</p>
+                       <a href="#">dan.oliver82@example.com</a>
+                     </div>
+                     <p>10/15/16</p>
+                 </div>
+            </section>
+                    
+            <section class="message">
+                <h3>Message User</h3>
+                <form class="widget-container">
+                    <input type="text" placeholder="Search for user"class="form-field" id="userField">
+                    <textarea placeholder="Message for user" class="form-area"id= "messageField" ></textarea>
+                    <button class="button-primary" id="send" >Send</button>
+                </form>
+            </section>
+               
+            <section class="settings">
+                <h3>Settings</h3>
+                  <div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                  </div>
+                  <div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                  </div>
+                  <select class="form-field" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option>Eastern</option>
+                        <!-- more options -->
+                  </select>
+                  <div class="settings-button" >
+                        <button class="button-primary" id="save">Save</button>
+                        <button class="button-disabled" id="cancel">Cancel</button>
+                  </div>    
+            </section>
+        </main>
+    </body>
+</html>
