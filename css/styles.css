@@ -337,10 +337,6 @@ template {
   display: none;
 }
 
-img {
-  border: 3px solid blue;
-}
-
 /*----------Toggle Switch/ button Styles----------*/
 .switch {
   position: relative;
