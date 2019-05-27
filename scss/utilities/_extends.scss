@@ -1,0 +1,31 @@
+// Center Images
+%centered {
+    display: block;
+    margin: 0 auto;
+  }
+
+  //Button Items only
+  %btn{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  //Links
+  %link-love{
+    text-decoration: none;
+  }
+
+// Nav Items
+  %nav-properties{
+    list-style-type: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: .5em;
+    font-size: .9em;
+  }
+// Provived Padding and curved borders for 
+  %padding {
+    padding: .5em;
+    border-radius: 5px;
+  }

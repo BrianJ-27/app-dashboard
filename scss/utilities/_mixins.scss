@@ -1,0 +1,41 @@
+// **************************************
+// MIXINS
+// **************************************
+/* width for colored buttons for 768px screen sizes */
+@mixin btn_width{
+    width: 15%;
+  }
+  
+  //centering text on page
+   @mixin txt-cntrd {
+     text-align: center;
+   }
+  
+   //Create a flex container
+   @mixin flex_me(
+     $dir: null,
+     $wrap: null,
+     $just: null)
+     {
+       display: flex;
+       flex-direction: $dir;
+       flex-wrap: $wrap;
+       justify-content: $just;
+     }
+  
+  // Media Query
+  @mixin mq($break){
+    $value: map-get($breakpoints, $break);
+    $md: map-get($breakpoints, 'md');
+  
+    @if $value > $md {
+      @media (min-width: $value){
+        @content;
+      }
+    }
+    @else {
+      @media (min-width: $value){
+        @content;
+     }
+    }
+  }

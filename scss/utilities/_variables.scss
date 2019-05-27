@@ -1,0 +1,32 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+
+//Base Colors
+$white: #fff;
+$mid-night-darkness: #000;
+$main-site-color: #513C80;
+$accent-color: #807B3C;
+
+//Button Colors
+$color-link-button-default: #69F6FF;
+$button-success: #09E827;
+$button-error: #D13219;
+$button-warning: #FF760D;
+
+//layout
+$max-width: 1200px;
+
+//Font Stacks
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+$font-google-primary: 'Dosis', sans-serif ;
+$font-secondary: 'Helvetica' sans-serif;
+$base-font-size: 16px;
+$font-color: #8c8c8c;
+$font-color-secondary: #606060;
+
+// Media Query Breakpoint Map
+$breakpoints: (
+'md': 768px,
+'lg': 992px,
+);
