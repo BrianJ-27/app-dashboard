@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 /* width for colored buttons for 768px screen sizes */
+.my-pic,
+.circle {
+  border-radius: 50%;
+  border: 2px solid #B38F00;
+  height: 3.75em;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -358,21 +365,30 @@ form {
   padding: 0;
 }
 
-nav {
-  background-color: #242EFF;
-}
-
 .my-header {
   background-color: #bdc0ff;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 1.25em;
+  font-style: italic;
+  color: #fff;
+  border-bottom: 3px dotted #fff;
+}
+
+span {
+  font-size: 1.4375em;
+  padding-left: 0.1875em;
+}
+
+nav {
+  background-color: #242EFF;
 }
 
 .icons {
   fill: #fff;
   width: 5%;
-}
-
-.my-pic {
-  height: 3.75em;
 }
 
 /*----------Toggle Switch/ button Styles----------*/

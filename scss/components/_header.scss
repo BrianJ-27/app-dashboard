@@ -1,0 +1,16 @@
+.my-header {
+    background-color: $primary-light;
+}
+
+h1{
+ display: inline-block;
+ font-size: px-to-ems(20px);
+ font-style: italic;
+ color: $white;
+ border-bottom: 3px dotted $white;
+}
+
+span{
+  font-size: px-to-ems(23px);  
+  padding-left: px-to-ems(3px);
+}

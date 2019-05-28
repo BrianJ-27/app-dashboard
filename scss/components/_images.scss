@@ -1,3 +1,4 @@
-.my-pic{
-    height: px-to-ems(60px);
+.my-pic,
+.circle{
+    @extend %roundyImg;
 }
