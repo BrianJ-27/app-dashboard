@@ -365,15 +365,19 @@ form {
   padding: 0;
 }
 
-.my-header {
+.my-header,
+.user-profile {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.my-header {
   background-color: #9ad6fc;
 }
 
 h1 {
   display: inline-block;
+  flex: 1;
   font-size: 1.25em;
   font-style: italic;
   color: #fff;
@@ -387,6 +391,11 @@ span {
 .bell {
   width: 1.875em;
   fill: #fff;
+  border-right: 2px solid #fff;
+}
+
+.notify-message-box {
+  display: none;
 }
 
 nav {
