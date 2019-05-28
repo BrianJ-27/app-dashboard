@@ -369,10 +369,17 @@ form {
 .user-profile {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .my-header {
   background-color: #9ad6fc;
+  padding: 10px;
+}
+
+.user-profile {
+  border-left: 2px solid #fff;
+  border-width: left;
 }
 
 h1 {
@@ -389,13 +396,21 @@ span {
 }
 
 .bell {
-  width: 1.875em;
+  width: 1.5625em;
   fill: #fff;
-  border-right: 2px solid #fff;
+}
+
+.my-pic {
+  height: 2.5em;
 }
 
 .notify-message-box {
   display: none;
+}
+
+.profile-username {
+  font-size: 0.9375em;
+  color: #fff;
 }
 
 nav {

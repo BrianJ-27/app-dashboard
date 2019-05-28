@@ -15,12 +15,14 @@
    @mixin flex_me(
      $dir: null,
      $wrap: null,
-     $just: null)
+     $just: null,
+     $vertAlign: null)
      {
        display: flex;
        flex-direction: $dir;
        flex-wrap: $wrap;
        justify-content: $just;
+       align-items: $vertAlign;
      }
   
   // Media Query
