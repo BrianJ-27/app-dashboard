@@ -339,6 +339,15 @@ template {
   display: none;
 }
 
+nav {
+  background: #513C80;
+}
+
+.icons {
+  fill: #fff;
+  width: 5%;
+}
+
 /*----------Toggle Switch/ button Styles----------*/
 .switch {
   position: relative;
