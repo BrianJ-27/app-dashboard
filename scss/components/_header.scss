@@ -1,12 +1,15 @@
 
+.my-header,
+.user-profile{
+  @include flex_me($just: flex-end);
+}
 .my-header {
-  @include flex_me($wrap: wrap, 
-                   $just: flex-end);
   background-color: $primary-light;
 }
 
 h1{
  display: inline-block;
+ flex: 1;
  font-size: px-to-ems(20px);
  font-style: italic;
  color: $white; 
@@ -20,4 +23,9 @@ span{
 .bell{
   width: px-to-ems(30px);
   fill: $white;
+  border-right: 2px solid $white;
+}
+
+.notify-message-box{
+  display: none;
 }
