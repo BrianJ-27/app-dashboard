@@ -339,13 +339,40 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body,
+header,
+nav,
+section,
+div,
+ul,
+p,
+h1,
+h2,
+h3,
+form {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
-  background: #513C80;
+  background: #242EFF;
+}
+
+header {
+  background: #a4a8ff;
 }
 
 .icons {
   fill: #fff;
   width: 5%;
+}
+
+.my-pic {
+  height: 3.75em;
 }
 
 /*----------Toggle Switch/ button Styles----------*/

@@ -4,6 +4,12 @@
     margin: 0 auto;
   }
 
+  //rounded Images
+  %roundyImg {
+    border-radius: 50%;
+    border: 2px solid $accent-color;
+  }
+
   //Button Items only
   %btn{
     text-align: center;
