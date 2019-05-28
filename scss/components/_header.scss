@@ -1,5 +1,8 @@
+
 .my-header {
-    background-color: $primary-light;
+  @include flex_me($wrap: wrap, 
+                   $just: flex-end);
+  background-color: $primary-light;
 }
 
 h1{
@@ -7,10 +10,14 @@ h1{
  font-size: px-to-ems(20px);
  font-style: italic;
  color: $white;
- border-bottom: 3px dotted $white;
 }
 
 span{
   font-size: px-to-ems(23px);  
   padding-left: px-to-ems(3px);
+}
+
+.bell{
+  width: px-to-ems(30px);
+  fill: $white;
 }

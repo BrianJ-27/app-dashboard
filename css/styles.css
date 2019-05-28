@@ -366,7 +366,10 @@ form {
 }
 
 .my-header {
-  background-color: #bdc0ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9ad6fc;
 }
 
 h1 {
@@ -382,13 +385,18 @@ span {
   padding-left: 0.1875em;
 }
 
+.bell {
+  width: 1.875em;
+  fill: #fff;
+}
+
 nav {
-  background-color: #242EFF;
+  background-color: #089af5;
 }
 
 .icons {
   fill: #fff;
-  width: 5%;
+  width: 2.5em;
 }
 
 /*----------Toggle Switch/ button Styles----------*/
