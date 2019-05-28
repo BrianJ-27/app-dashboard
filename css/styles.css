@@ -368,7 +368,7 @@ form {
 .my-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   background-color: #9ad6fc;
 }
 
@@ -377,7 +377,6 @@ h1 {
   font-size: 1.25em;
   font-style: italic;
   color: #fff;
-  border-bottom: 3px dotted #fff;
 }
 
 span {
