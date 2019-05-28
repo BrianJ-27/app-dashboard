@@ -365,6 +365,19 @@ form {
   padding: 0;
 }
 
+h1 {
+  display: inline-block;
+  flex: 1;
+  font-size: 1.25em;
+  font-style: italic;
+  color: #fff;
+}
+
+span {
+  font-size: 1.4375em;
+  padding-left: 0.1875em;
+}
+
 .my-header,
 .user-profile {
   display: flex;

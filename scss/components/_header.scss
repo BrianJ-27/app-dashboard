@@ -1,31 +1,37 @@
 
-.my-header,
-.user-profile{
-  @include flex_me($just: flex-end);
+.my-header{
+  @include flex_me($just: flex-end, $vertAlign: center);
 }
 .my-header {
   background-color: $primary-light;
+  padding: 10px;
 }
 
-h1{
- display: inline-block;
- flex: 1;
- font-size: px-to-ems(20px);
- font-style: italic;
- color: $white; 
-}
-
-span{
-  font-size: px-to-ems(23px);  
-  padding-left: px-to-ems(3px);
+.user-profile{
+  border-left: 2px solid $white;
+  border-width: left;
+  padding-left: 7px;
+  @include flex_me($just:null);
+ 
 }
 
 .bell{
-  width: px-to-ems(30px);
+  width: px-to-ems(25px);
   fill: $white;
-  border-right: 2px solid $white;
+  margin-right: 7px;
+}
+
+.my-pic{
+  height: px-to-ems(40px); 
 }
 
 .notify-message-box{
   display: none;
+}
+
+.profile-username{
+  display: inline-block;
+  font-size: px-to-ems(10px);
+  color: $white;
+  @include txt-cntrd;
 }
