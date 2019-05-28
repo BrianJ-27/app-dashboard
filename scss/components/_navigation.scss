@@ -1,9 +1,9 @@
-nav{
-    background: $main-site-color;
+nav {
+    background-color: $primary;
 }
 
-header{
-    background: lighten(#242EFF, 25%)
+.my-header {
+    background-color: $primary-light;
 }
 
 .icons {

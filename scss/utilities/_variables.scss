@@ -2,17 +2,16 @@
 // GLOBAL VARIABLES
 // **************************************
 
-//Base Colors
+//Base Site Colors
 $white: #fff;
 $mid-night-darkness: #000;
-$main-site-color: #242EFF;
+$primary: #242EFF;
+$primary-light: lighten($primary, 30%);
+$primary-dark: darken($primary, 25%);
 $accent-color: #B38F00;
 
 //Button Colors
-$color-link-button-default: #69F6FF;
-$button-success: #09E827;
-$button-error: #D13219;
-$button-warning: #FF760D;
+$primary-complementary: complement($primary);
 
 //layout
 $max-width: 1200px;

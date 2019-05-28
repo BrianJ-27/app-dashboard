@@ -359,11 +359,11 @@ form {
 }
 
 nav {
-  background: #242EFF;
+  background-color: #242EFF;
 }
 
-header {
-  background: #a4a8ff;
+.my-header {
+  background-color: #bdc0ff;
 }
 
 .icons {
