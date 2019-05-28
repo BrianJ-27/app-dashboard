@@ -368,7 +368,7 @@ form {
 h1 {
   display: inline-block;
   flex: 1;
-  font-size: 1.25em;
+  font-size: 0.875em;
   font-style: italic;
   color: #fff;
 }
@@ -378,8 +378,7 @@ span {
   padding-left: 0.1875em;
 }
 
-.my-header,
-.user-profile {
+.my-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -387,34 +386,34 @@ span {
 
 .my-header {
   background-color: #9ad6fc;
-  padding: 10px;
+  padding: 5px;
 }
 
 .user-profile {
-  border-left: 2px solid #fff;
-  border-width: left;
-}
-
-h1 {
-  display: inline-block;
-  flex: 1;
-  font-size: 1.25em;
-  font-style: italic;
-  color: #fff;
-}
-
-span {
-  font-size: 1.4375em;
-  padding-left: 0.1875em;
+  border-left: 1px solid #fff;
+  padding-left: 7px;
+  display: flex;
 }
 
 .bell {
-  width: 1.5625em;
+  width: 1.25em;
   fill: #fff;
+  margin-right: 7px;
+}
+
+.notification-circle {
+  cursor: pointer;
+  position: absolute;
+  right: 120px;
+  top: 0.625em;
+  background-color: #1ACE05;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
 }
 
 .my-pic {
-  height: 2.5em;
+  height: 2.1875em;
 }
 
 .notify-message-box {
@@ -422,17 +421,26 @@ span {
 }
 
 .profile-username {
-  font-size: 0.9375em;
+  display: flex;
+  align-self: center;
+  font-size: 0.75em;
+  padding-left: 5px;
+  width: 6.25em;
   color: #fff;
+  text-align: center;
 }
 
 nav {
+  display: flex;
+  justify-content: center;
   background-color: #089af5;
+  padding: 2px;
 }
 
 .icons {
   fill: #fff;
-  width: 2.5em;
+  width: 1.75em;
+  margin: 7px;
 }
 
 /*----------Toggle Switch/ button Styles----------*/

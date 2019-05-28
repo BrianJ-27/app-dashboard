@@ -1,10 +1,13 @@
 nav {
+    @include flex_me($just: center);
     background-color: $primary;
+    padding: 2px;
 }
 
 .icons {
     fill: #fff;
-    width: px-to-ems(40px);
+    width: px-to-ems(28px);
+    margin: 7px;
 
 }
 

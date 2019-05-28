@@ -4,25 +4,35 @@
 }
 .my-header {
   background-color: $primary-light;
-  padding: 10px;
+  padding: 5px;
 }
 
 .user-profile{
-  border-left: 2px solid $white;
-  border-width: left;
+  border-left: 1px solid $white;
   padding-left: 7px;
   @include flex_me($just:null);
  
 }
 
 .bell{
-  width: px-to-ems(25px);
+  width: px-to-ems(20px);
   fill: $white;
   margin-right: 7px;
 }
 
+.notification-circle{
+  cursor: pointer;
+  position: absolute;
+  right: 120px;
+  top: px-to-ems(10px);    
+  background-color: #1ACE05;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
 .my-pic{
-  height: px-to-ems(40px); 
+  height: px-to-ems(35px); 
 }
 
 .notify-message-box{
@@ -30,8 +40,11 @@
 }
 
 .profile-username{
-  display: inline-block;
-  font-size: px-to-ems(10px);
+  display: flex;
+  align-self: center;
+  font-size: px-to-ems(12px);
+  padding-left: 5px;
+  width: px-to-ems(100px);
   color: $white;
   @include txt-cntrd;
 }
