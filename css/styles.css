@@ -385,23 +385,30 @@ span {
   grid-template-areas: "header" "navigation" "main";
 }
 @media (min-width: 768px) {
-  .grid_wrapper .grid_wrapper {
-    grid-template-columns: 85px 1fr 1fr;
-    grid-template-rows: repeat();
-    grid-template-areas: "header header header" "navigation main main" "navigation main main" "navigation main main" "navigation main main";
+  .grid_wrapper {
+    display: grid;
+    grid-template-columns: 4% 48% 48%;
+    grid-template-rows: 50px repeat(5, 1fr);
+    grid-template-areas: "header header header" "navigation main main" "navigation main main" "navigation main main" "navigation main main" "navigation main main";
   }
 }
 
-.my-header {
+header {
   grid-area: header;
 }
 
-.navigation {
+nav {
   grid-area: navigation;
 }
 
-.main {
+main {
   grid-area: main;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .my-header {
