@@ -25,7 +25,30 @@ h1{
     color: $white; 
    }
 
-span{
+   span{
     font-size: px-to-ems(23px);  
     padding-left: px-to-ems(3px);
-  }
+  } 
+
+h2,
+h3{
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+h3{
+    @include mq('md') {
+    text-align: left;    
+  }  
+}
+
+section{
+    @include flex_me($dir:column, $wrap: wrap);
+    @include mq('md') {
+     @include flex_me($wrap: wrap)
+    }
+}
+
+
+

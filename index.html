@@ -43,6 +43,7 @@
         </header>
     <!------------------------------------------NAVIGATIONAL CONTENT---------------------------------------------------->
         <nav class="navigation">
+          <div class="nav-wrapper">
             <a class="dashboard_icon" href="#">
                 <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -115,16 +116,18 @@
                 </g>
                 </svg> 
             </a>
-        </nav>
-    <!---------------------------------------------MAIN CONTENT--------------------------------------------------------->
+          </div>
+        </nav>   
+        <!---------------------------------------------MAIN CONTENT--------------------------------------------------------->
         <main>
-            <section class="main-header">
+            <div class="main-header">
                 <h2>Dashboard</h2>
                 <div class="search-wrapper">
                      <input type="search" name="search" id="search_content">
                 </div>
-            </section>
+            </div> 
     <!----------------------LINE GRAPH SECTION-------------------------------->
+          <div class="main-grid-wrapper">
             <section class="traffic">
                 <div class="traffic-header">
                   <h3>Traffic</h3>
@@ -143,18 +146,18 @@
     <!----------------------BAR GRAPH SECTION-------------------------------->
             <section class="daily">
                  <h3>Daily Traffic</h3>
-                    <div class="widget-container-half">
+                  <div class="widget-container-half">
                         <!-- element bar graph will attach to -->
                         <canvas id="daily-chart"></canvas>
-                    </div>
+                  </div>
             </section>
   <!----------------------PIE/CIRCLE GRAPH SECTION-------------------------------->
             <section class="mobile">
                  <h3>Mobile Users </h3>
-                    <div class="widget-container-half">
+                 <div class="widget-container-half">
                         <!-- element bar graph will attach to -->
                         <canvas id="doughnut-chart"></canvas>
-                    </div>
+                  </div>
                </section>
    <!----------------------SOCIAL MEDIA ICON DATA-------------------------------->       
             <div class="social-container">
@@ -287,6 +290,7 @@
                         <button class="button-disabled" id="cancel">Cancel</button>
                   </div>    
             </section>
+          </div>
         </main>
     </body>
 </html>

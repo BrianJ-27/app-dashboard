@@ -1,0 +1,20 @@
+//Dashboard Search bar
+.main-header{
+    @include flex_me(
+         $dir: row,
+         $wrap: wrap,
+         $just: space-between
+     );
+} 
+
+.search-wrapper{
+    height: 50px;
+    background: #E8E8E8;
+}
+//Main Content
+.main-grid-wrapper{
+    display: grid;
+    @include mq('md'){
+        grid-template-columns: 50% 50%;
+    }
+}

@@ -1,12 +1,15 @@
 nav {
-    @include flex_me($just: center);
     background-color: $primary;
-    padding: 2px;
+}
+
+.nav-wrapper{
+    margin: 0 auto;
+    width: 55%;
 }
 
 .icons {
     fill: #fff;
-    width: px-to-ems(28px);
+    width: px-to-ems(25px);
     margin: 7px;
 
 }

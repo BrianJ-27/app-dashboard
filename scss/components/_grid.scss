@@ -8,8 +8,7 @@
     "main";
     @include mq('md'){
         display: grid;
-        grid-template-columns: 4% 48% 48%; 
-        grid-template-rows:  50px repeat(5, 1fr);
+        grid-template-columns: 55px 1fr; 
         grid-template-areas:
         "header header header"
         "navigation main main"
@@ -30,13 +29,7 @@ nav {
 
 main {
     grid-area: main;
-}
-
-.main-header{
-    @include flex_me(
-        $dir: column,
-        $wrap: wrap,
-
-    )
-}
     
+}
+
+  
