@@ -412,7 +412,7 @@ section {
 @media (min-width: 768px) {
   .grid_wrapper {
     display: grid;
-    grid-template-columns: 55px 1fr;
+    grid-template-columns: 60px repeat(2, minmax(200px, auto));
     grid-template-areas: "header header header" "navigation main main" "navigation main main" "navigation main main" "navigation main main" "navigation main main";
   }
 }
@@ -427,6 +427,12 @@ nav {
 
 main {
   grid-area: main;
+}
+
+.traffic,
+.social-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .my-header {
