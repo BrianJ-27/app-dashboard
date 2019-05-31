@@ -46,7 +46,7 @@ h3{
 section{
     @include flex_me($dir:column, $wrap: wrap);
     @include mq('md') {
-     @include flex_me($wrap: wrap)
+     @include flex_me($wrap: wrap);
     }
 }
 

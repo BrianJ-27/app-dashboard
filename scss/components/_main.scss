@@ -1,4 +1,4 @@
-//Dashboard Search bar
+//Dashboard & Search bar Wrapper
 .main-header{
     @include flex_me(
          $dir: row,
@@ -7,14 +7,54 @@
      );
 } 
 
+.db-title{
+    flex-basis: 20%;
+    font-size: .9em;
+    padding-left: 10px; 
+}
+
 .search-wrapper{
+    display: flex;
+    justify-content: flex-end;
     height: 50px;
     background: #E8E8E8;
+    flex-basis: 75%;
 }
+
+
+
 //Main Content
 .main-grid-wrapper{
-    display: grid;
     @include mq('md'){
+        display: grid;
         grid-template-columns: 50% 50%;
     }
 }
+
+.traffic-header,
+.traffic-nav{
+    padding: 1em;
+    @include flex_me($dir:column,$just: center);
+    @include mq('md'){
+        @include flex_me($dir:row,$just: space-between);
+    }
+}
+
+.traffic-nav{
+    align-items: center;
+    & li {
+        list-style-type: none;
+        margin-top: 1em;
+        padding: 5px;
+  }
+  & li:hover{
+    background: green;
+    border-radius: 10px;
+    transition: background .8s;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+
+

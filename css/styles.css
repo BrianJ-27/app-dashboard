@@ -7,6 +7,11 @@
   height: 3.75em;
 }
 
+.search-input {
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -494,18 +499,57 @@ main {
   justify-content: space-between;
 }
 
-.search-wrapper {
-  height: 50px;
-  background: #E8E8E8;
+.db-title {
+  flex-basis: 20%;
+  font-size: 0.9em;
+  padding-left: 10px;
 }
 
-.main-grid-wrapper {
-  display: grid;
+.search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  background: #E8E8E8;
+  flex-basis: 75%;
 }
+
 @media (min-width: 768px) {
   .main-grid-wrapper {
+    display: grid;
     grid-template-columns: 50% 50%;
   }
+}
+
+.traffic-header,
+.traffic-nav {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .traffic-header,
+.traffic-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.traffic-nav {
+  align-items: center;
+}
+.traffic-nav li {
+  list-style-type: none;
+  margin-top: 1em;
+  padding: 5px;
+}
+.traffic-nav li:hover {
+  background: green;
+  border-radius: 10px;
+  transition: background 0.8s;
+  color: #fff;
+  cursor: pointer;
 }
 
 nav {
@@ -521,6 +565,12 @@ nav {
   fill: #fff;
   width: 1.5625em;
   margin: 7px;
+}
+
+.search-input {
+  height: 30px;
+  align-self: center;
+  margin-right: 1em;
 }
 
 /*----------Toggle Switch/ button Styles----------*/
