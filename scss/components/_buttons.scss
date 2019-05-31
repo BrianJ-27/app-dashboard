@@ -1,3 +1,25 @@
+
+//Traffic Buttons 
+.traffic-nav{
+  align-items: center;
+  & li {
+      background: $primary;
+      border-radius: 10px;
+      list-style-type: none;
+      margin-top: 1em;
+      width: 100px;
+      padding: 5px;
+      text-align: center;
+}
+& li:hover{
+  background: green;
+  border-radius: 10px;
+  transition: background .8s;
+  color: #fff;
+  cursor: pointer;
+}
+}
+
 /*----------Toggle Switch/ button Styles----------*/
 .switch {
     position: relative;

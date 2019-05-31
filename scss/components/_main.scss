@@ -14,22 +14,12 @@
 }
 
 .search-wrapper{
-    display: flex;
-    justify-content: flex-end;
+    @include flex_me($just: flex-end);
     height: 50px;
     background: #E8E8E8;
     flex-basis: 75%;
 }
 
-
-
-//Main Content
-.main-grid-wrapper{
-    @include mq('md'){
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-}
 
 .traffic-header,
 .traffic-nav{
@@ -40,20 +30,34 @@
     }
 }
 
-.traffic-nav{
-    align-items: center;
-    & li {
-        list-style-type: none;
-        margin-top: 1em;
-        padding: 5px;
-  }
-  & li:hover{
-    background: green;
-    border-radius: 10px;
-    transition: background .8s;
-    color: #fff;
-    cursor: pointer;
-  }
+.social-container{
+    @include flex_me($dir:column, $vertAlign:center);
+    margin-top: 1em;
+    @include mq('md'){
+        @include flex_me($dir: row);
+    }
+}
+
+.social-twitter,
+.social-facebook,
+.social-google{
+    @include flex_me($just:center, $vertAlign: center);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: $primary;
+    margin-top: 1em;
+}
+
+.members-container{
+    @include flex_me($dir:column, $vertAlign:center);
+    margin-top: 1em;
+    @include mq('md'){
+        @include flex_me($dir: row);
+    }
+    & p{
+        text-align: center;
+    }
 }
 
 

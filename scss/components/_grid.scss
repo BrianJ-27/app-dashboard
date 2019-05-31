@@ -1,3 +1,4 @@
+//Base Grid Layout for Whole site
 .grid_wrapper{
     display: grid;
     grid-template-columns: 100%; 
@@ -19,6 +20,15 @@
   }    
 }
 
+//Main Content Grid Layout
+.main-grid-wrapper{
+    @include mq('md'){
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+// Grid Area Items
 header {
     grid-area: header;
 }
@@ -31,9 +41,9 @@ main {
     grid-area: main;
     
 }
-
+// Make the main traffic and social media section span across 2 cols
 .traffic,
-.social-container{
+.social{
     grid-column-start: 1;
     grid-column-end: 3;
 }
