@@ -354,6 +354,7 @@ h3 {
     text-align: left; } }
 
 section {
+  border-bottom: 1px solid #606060;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
@@ -454,6 +455,12 @@ main {
   background: #E8E8E8;
   flex-basis: 75%; }
 
+@media (min-width: 768px) {
+  .daily,
+  .new-members,
+  .message {
+    border-right: 1px solid #606060; } }
+
 .traffic-header,
 .traffic-nav {
   padding: 1em;
@@ -471,11 +478,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1em; }
+  margin: 1em 0; }
   @media (min-width: 768px) {
     .social-container {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      justify-content: space-around; } }
 
 .social-twitter,
 .social-facebook,
@@ -489,17 +497,75 @@ main {
   background: #089af5;
   margin-top: 1em; }
 
-.members-container {
+.icon-wrapper {
+  background: #E8E8E8;
+  border: 1px solid #8c8c8c;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  padding: 10px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1em; }
   @media (min-width: 768px) {
-    .members-container {
+    .icon-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 28%;
+      padding: 10px; } }
+
+.twitter-text,
+.facebook-text,
+.google-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.twitter-text p:first-child,
+.facebook-text p:first-child,
+.google-text p:first-child {
+  color: #089af5;
+  font-size: 1.2em;
+  font-weight: 500; }
+
+.twitter-text p:last-child,
+.facebook-text p:last-child,
+.google-text p:last-child {
+  font-size: 2em; }
+
+.members-container,
+.last-member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .members-container,
+    .last-member-container {
       display: flex;
       flex-direction: row; } }
-  .members-container p {
+  .members-container p,
+  .last-member-container p {
     text-align: center; }
+
+.members-container,
+.last-member-container {
+  padding: 1em 0;
+  margin: 0 auto;
+  width: 70%; }
+  @media (min-width: 768px) {
+    .members-container,
+    .last-member-container {
+      width: 90%; } }
+
+.members-container {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px; }
+
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 nav {
   background-color: #089af5; }

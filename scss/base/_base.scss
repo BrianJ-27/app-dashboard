@@ -44,6 +44,7 @@ h3{
 }
 
 section{
+    border-bottom: 1px solid $font-color-secondary;
     @include flex_me($dir:column, $wrap: wrap);
     @include mq('md') {
      @include flex_me($wrap: wrap);

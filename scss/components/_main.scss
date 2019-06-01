@@ -20,6 +20,14 @@
     flex-basis: 75%;
 }
 
+.daily,
+.new-members,
+.message{
+    @include mq('md'){
+        border-right: 1px solid $font-color-secondary;
+    }
+}
+
 
 .traffic-header,
 .traffic-nav{
@@ -32,9 +40,9 @@
 
 .social-container{
     @include flex_me($dir:column, $vertAlign:center);
-    margin-top: 1em;
+    margin: 1em 0;
     @include mq('md'){
-        @include flex_me($dir: row);
+        @include flex_me($dir: row, $just: space-around);
     }
 }
 
@@ -49,15 +57,73 @@
     margin-top: 1em;
 }
 
-.members-container{
+.icon-wrapper{
+    background: #E8E8E8;
+    border: 1px solid #8c8c8c;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    padding: 10px;
+    width: 60%;
     @include flex_me($dir:column, $vertAlign:center);
     margin-top: 1em;
+    @include mq('md'){
+        @include flex_me($dir: row);
+        width: 28%;
+        padding: 10px;
+    }
+}
+
+.twitter-text,
+.facebook-text,
+.google-text{
+    @include flex_me($dir:column, $vertAlign: center);
+}
+
+.twitter-text p:first-child,
+.facebook-text p:first-child,
+.google-text p:first-child {
+    color: $primary;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.twitter-text p:last-child,
+.facebook-text p:last-child,
+.google-text p:last-child {
+    font-size: 2em;
+}
+
+
+.members-container,
+.last-member-container{
+    @include flex_me($dir:column, $vertAlign: center);
     @include mq('md'){
         @include flex_me($dir: row);
     }
     & p{
         text-align: center;
     }
+}
+
+.members-container,
+.last-member-container{
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 70%;
+    @include mq('md'){
+        width: 90%;
+    }      
+}
+
+.members-container{
+
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+
+.widget-container{
+    @include flex_me($dir:column, $vertAlign: center);
 }
 
 

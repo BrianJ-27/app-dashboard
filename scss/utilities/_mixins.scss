@@ -16,13 +16,15 @@
      $dir: null,
      $wrap: null,
      $just: null,
-     $vertAlign: null)
+     $vertAlign: null,
+     $horznAlign: null)
      {
        display: flex;
        flex-direction: $dir;
        flex-wrap: $wrap;
        justify-content: $just;
        align-items: $vertAlign;
+       align-self: $horznAlign;
      }
   
   // Media Query
