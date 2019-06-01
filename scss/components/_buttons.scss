@@ -19,6 +19,27 @@
   cursor: pointer;
 }
 }
+/*-------Message button Styles---------*/
+.button-primary{
+  margin: 1em 0;
+  width: 100%;
+  background: $primary;
+  color: $white;
+  @extend %padding;
+
+}
+
+/*-------Settings button Styles---------*/
+.settings-button{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-save{
+  background: $primary;
+  color: $white;
+  @extend %padding;
+}
 
 /*----------Toggle Switch/ button Styles----------*/
 .switch {

@@ -116,15 +116,10 @@
 }
 
 .members-container{
-
     border-bottom: 1px solid black;
     padding-bottom: 5px;
 }
 
-
-.widget-container{
-    @include flex_me($dir:column, $vertAlign: center);
-}
 
 
 

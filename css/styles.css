@@ -6,7 +6,8 @@
   border: 2px solid #B38F00;
   height: 3.75em; }
 
-.search-input {
+.search-input, .form-field,
+textarea, .button-primary, .button-save {
   padding: .5em;
   border-radius: 5px; }
 
@@ -562,11 +563,6 @@ main {
   border-bottom: 1px solid black;
   padding-bottom: 5px; }
 
-.widget-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 nav {
   background-color: #089af5; }
 
@@ -584,6 +580,21 @@ nav {
   align-self: center;
   margin-right: 1em; }
 
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
+
+.form-field,
+textarea {
+  width: 100%;
+  margin-top: 1em; }
+
+textarea {
+  height: 100px; }
+
 .traffic-nav {
   align-items: center; }
   .traffic-nav li {
@@ -600,6 +611,22 @@ nav {
     transition: background .8s;
     color: #fff;
     cursor: pointer; }
+
+/*-------Message button Styles---------*/
+.button-primary {
+  margin: 1em 0;
+  width: 100%;
+  background: #089af5;
+  color: #fff; }
+
+/*-------Settings button Styles---------*/
+.settings-button {
+  width: 80%;
+  margin: 0 auto; }
+
+.button-save {
+  background: #089af5;
+  color: #fff; }
 
 /*----------Toggle Switch/ button Styles----------*/
 .switch {
