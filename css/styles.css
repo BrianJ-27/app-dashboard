@@ -7,7 +7,7 @@
   height: 3.75em; }
 
 .search-input, .form-field,
-textarea, .button-primary, .button-save {
+textarea, .button-primary, .button-save, .button-disabled {
   padding: .5em;
   border-radius: 5px; }
 
@@ -584,7 +584,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 .form-field,
@@ -593,7 +593,7 @@ textarea {
   margin-top: 1em; }
 
 textarea {
-  height: 100px; }
+  height: 125px; }
 
 .traffic-nav {
   align-items: center; }
@@ -620,13 +620,33 @@ textarea {
   color: #fff; }
 
 /*-------Settings button Styles---------*/
+.settings {
+  width: 90%;
+  margin: 0 auto; }
+
 .settings-button {
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto; }
 
 .button-save {
   background: #089af5;
-  color: #fff; }
+  color: #fff;
+  width: 45%;
+  margin: 1em 0; }
+
+.button-disabled {
+  background: #8c8c8c;
+  color: #fff;
+  width: 45%;
+  margin: 1em 0; }
+
+.email-settings,
+.profile-settings {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0; }
 
 /*----------Toggle Switch/ button Styles----------*/
 .switch {

@@ -30,8 +30,15 @@
 }
 
 /*-------Settings button Styles---------*/
+
+.settings{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .settings-button{
-  width: 80%;
+  @include flex_me($just: space-between);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -39,6 +46,23 @@
   background: $primary;
   color: $white;
   @extend %padding;
+  width: 45%;
+  margin: 1em 0;
+}
+
+.button-disabled{
+  background: $font-color;
+  color: $white;
+  @extend %padding;
+  width: 45%;
+  margin: 1em 0;
+}
+
+
+.email-settings,
+.profile-settings{
+  @include flex_me($just: space-between);
+  margin: 1em 0;
 }
 
 /*----------Toggle Switch/ button Styles----------*/
