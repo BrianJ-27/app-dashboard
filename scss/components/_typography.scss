@@ -1,0 +1,14 @@
+
+.twitter-text p:first-child,
+.facebook-text p:first-child,
+.google-text p:first-child {
+    color: $primary;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.twitter-text p:last-child,
+.facebook-text p:last-child,
+.google-text p:last-child {
+    font-size: 2em;
+}

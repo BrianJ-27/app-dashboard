@@ -475,6 +475,13 @@ main {
       flex-direction: row;
       justify-content: space-between; } }
 
+.twitter-text,
+.facebook-text,
+.google-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .social-container {
   display: flex;
   flex-direction: column;
@@ -485,18 +492,6 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-around; } }
-
-.social-twitter,
-.social-facebook,
-.social-google {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: #089af5;
-  margin-top: 1em; }
 
 .icon-wrapper {
   background: #E8E8E8;
@@ -516,24 +511,17 @@ main {
       width: 28%;
       padding: 10px; } }
 
-.twitter-text,
-.facebook-text,
-.google-text {
+.social-twitter,
+.social-facebook,
+.social-google {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.twitter-text p:first-child,
-.facebook-text p:first-child,
-.google-text p:first-child {
-  color: #089af5;
-  font-size: 1.2em;
-  font-weight: 500; }
-
-.twitter-text p:last-child,
-.facebook-text p:last-child,
-.google-text p:last-child {
-  font-size: 2em; }
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #089af5;
+  margin-top: 1em; }
 
 .members-container,
 .last-member-container {
@@ -562,6 +550,18 @@ main {
 .members-container {
   border-bottom: 1px solid black;
   padding-bottom: 5px; }
+
+.twitter-text p:first-child,
+.facebook-text p:first-child,
+.google-text p:first-child {
+  color: #089af5;
+  font-size: 1.2em;
+  font-weight: 500; }
+
+.twitter-text p:last-child,
+.facebook-text p:last-child,
+.google-text p:last-child {
+  font-size: 2em; }
 
 nav {
   background-color: #089af5; }

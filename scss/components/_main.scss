@@ -19,7 +19,7 @@
     background: #E8E8E8;
     flex-basis: 75%;
 }
-
+// placing the vertical line to split the content up
 .daily,
 .new-members,
 .message{
@@ -27,8 +27,7 @@
         border-right: 1px solid $font-color-secondary;
     }
 }
-
-
+// Laying out traffic section
 .traffic-header,
 .traffic-nav{
     padding: 1em;
@@ -38,6 +37,13 @@
     }
 }
 
+// Laying out social media section
+.twitter-text,
+.facebook-text,
+.google-text{
+    @include flex_me($dir:column, $vertAlign: center);
+}
+
 .social-container{
     @include flex_me($dir:column, $vertAlign:center);
     margin: 1em 0;
@@ -45,18 +51,7 @@
         @include flex_me($dir: row, $just: space-around);
     }
 }
-
-.social-twitter,
-.social-facebook,
-.social-google{
-    @include flex_me($just:center, $vertAlign: center);
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background: $primary;
-    margin-top: 1em;
-}
-
+// Gray background for Social Media Icons
 .icon-wrapper{
     background: #E8E8E8;
     border: 1px solid #8c8c8c;
@@ -72,28 +67,19 @@
         padding: 10px;
     }
 }
-
-.twitter-text,
-.facebook-text,
-.google-text{
-    @include flex_me($dir:column, $vertAlign: center);
+// Circular Blue Icons
+.social-twitter,
+.social-facebook,
+.social-google{
+    @include flex_me($just:center, $vertAlign: center);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: $primary;
+    margin-top: 1em;
 }
 
-.twitter-text p:first-child,
-.facebook-text p:first-child,
-.google-text p:first-child {
-    color: $primary;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.twitter-text p:last-child,
-.facebook-text p:last-child,
-.google-text p:last-child {
-    font-size: 2em;
-}
-
-
+// Laying out The New Member & Recent Activity section
 .members-container,
 .last-member-container{
     @include flex_me($dir:column, $vertAlign: center);
