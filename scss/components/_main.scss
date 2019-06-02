@@ -9,16 +9,30 @@
 } 
 // Main Dashboard Header Styles
 .db-title{
-    flex-basis: 20%;
-    font-size: .9em;
-    padding-left: 10px; 
+    flex-basis: 35%;
+    font-size: 1em;
+    padding: 1em; 
+    margin-top: 0; 
+
+}
+
+.seacrh-button{
+    height:30px;
+    border-radius: 5px;
+    align-self: center;
+    height: 30px; 
+}
+
+.search-icon{
+    width: 17px; 
 }
 
 .search-wrapper{
     @include flex_me($just: flex-end);
     height: 50px;
     background: #E8E8E8;
-    flex-basis: 75%;
+    flex-basis: 65%;
+    border-radius: 3px 0 0 6px;
 }
 
 .alert-wrapper{
@@ -50,12 +64,15 @@
     }
 }
 // Laying out traffic section
-.traffic-header,
+
 .traffic-nav{
     padding: 1em;
-    @include flex_me($dir:column,$just: center);
+    @include flex_me($wrap: wrap, $just:center);
     @include mq('md'){
         @include flex_me($dir:row,$just: space-between);
+    }
+    & li{
+        margin: .5em;
     }
 }
 

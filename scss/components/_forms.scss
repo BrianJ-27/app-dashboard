@@ -2,8 +2,9 @@
 //Main Dashboard Search Field
 .search-input{
     height: 30px;
+    width: 80%;
     align-self: center;
-    margin-right: 1em;
+    margin-right: .3em;
     @extend %padding;
 }
 

@@ -387,6 +387,7 @@ span {
 
 h2,
 h3 {
+  color: #606060;
   font-size: 1em;
   text-align: center;
   margin-top: 1em;
@@ -399,7 +400,7 @@ h3 {
 }
 
 section {
-  border-bottom: 1px solid #606060;
+  border-bottom: 1px solid #8c8c8c;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -495,7 +496,6 @@ main {
 
 .profile-username {
   display: flex;
-  align-self: center;
   font-size: 0.75em;
   padding-left: 5px;
   width: 6.25em;
@@ -512,9 +512,21 @@ main {
 }
 
 .db-title {
-  flex-basis: 20%;
-  font-size: 0.9em;
-  padding-left: 10px;
+  flex-basis: 35%;
+  font-size: 1em;
+  padding: 1em;
+  margin-top: 0;
+}
+
+.seacrh-button {
+  height: 30px;
+  border-radius: 5px;
+  align-self: center;
+  height: 30px;
+}
+
+.search-icon {
+  width: 17px;
 }
 
 .search-wrapper {
@@ -522,7 +534,8 @@ main {
   justify-content: flex-end;
   height: 50px;
   background: #E8E8E8;
-  flex-basis: 75%;
+  flex-basis: 65%;
+  border-radius: 3px 0 0 6px;
 }
 
 .alert-wrapper {
@@ -549,24 +562,25 @@ main {
   .daily,
 .new-members,
 .message {
-    border-right: 1px solid #606060;
+    border-right: 1px solid #8c8c8c;
   }
 }
 
-.traffic-header,
 .traffic-nav {
   padding: 1em;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .traffic-header,
-.traffic-nav {
+  .traffic-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.traffic-nav li {
+  margin: 0.5em;
 }
 
 .twitter-text,
@@ -593,7 +607,7 @@ main {
 
 .icon-wrapper {
   background: #E8E8E8;
-  border: 1px solid #8c8c8c;
+  border: 1px solid #606060;
   border-radius: 15px;
   margin-bottom: 1em;
   padding: 10px;
@@ -703,8 +717,9 @@ nav {
 
 .search-input {
   height: 30px;
+  width: 80%;
   align-self: center;
-  margin-right: 1em;
+  margin-right: 0.3em;
 }
 
 .widget-container {
@@ -774,7 +789,7 @@ textarea {
 }
 
 .button-disabled {
-  background: #8c8c8c;
+  background: #606060;
   color: #fff;
   width: 45%;
   margin: 1em 0;
