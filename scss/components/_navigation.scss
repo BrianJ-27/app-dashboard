@@ -3,8 +3,15 @@ nav {
 }
 
 .nav-wrapper{
-    margin: 0 auto;
-    width: 55%;
+    @include flex_me($just: space-around);
+    margin: 0;
+    padding: 0 30px;
+    @include mq('md'){
+        @include flex_me($dir: column, $just:center);
+        padding: 0;
+        margin: 10px;
+    }
+    
 }
 
 .icons {

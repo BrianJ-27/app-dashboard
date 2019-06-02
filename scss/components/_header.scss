@@ -1,8 +1,6 @@
 
 .my-header{
   @include flex_me($just: flex-end, $vertAlign: center);
-}
-.my-header {
   background-color: $primary-light;
   padding: 5px;
 }
@@ -48,3 +46,4 @@
   color: $white;
   @include txt-cntrd;
 }
+

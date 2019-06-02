@@ -5,8 +5,9 @@
          $wrap: wrap,
          $just: space-between
      );
+     margin-bottom: 1em;
 } 
-
+// Main Dashboard Header Styles
 .db-title{
     flex-basis: 20%;
     font-size: .9em;
@@ -19,6 +20,27 @@
     background: #E8E8E8;
     flex-basis: 75%;
 }
+
+.alert-wrapper{
+    background: $primary-light;
+    width: 80%;
+    margin: 0 auto;
+    color: $white;
+    padding: 15px; 
+    & strong{
+        color: $mid-night-darkness;
+        padding-right: 5px;
+    }
+    & p{
+        @include flex_me();
+    }
+}
+
+.alert-wrapper p::after{
+    content: "\00d7";
+    font-size: 2em;
+}
+
 // placing the vertical line to split the content up
 .daily,
 .new-members,
