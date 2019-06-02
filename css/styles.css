@@ -742,10 +742,18 @@ nav {
   margin: 0 auto;
 }
 
+form {
+  padding-top: 1em;
+}
+
 .form-field,
 textarea {
   width: 100%;
   margin-top: 1em;
+}
+
+.timezone {
+  margin-top: 2.8em;
 }
 
 textarea {
@@ -894,6 +902,11 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 10px 0 0 5px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .slider.round:before {
