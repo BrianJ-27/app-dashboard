@@ -21,7 +21,7 @@
 .notification-circle{
   cursor: pointer;
   position: absolute;
-  right: 125px;
+  right: px-to-ems(140px);
   top: px-to-ems(10px);    
   background-color: #1ACE05;
   width: 9px;
