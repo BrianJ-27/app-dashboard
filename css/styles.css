@@ -678,6 +678,7 @@ main {
 .members-text + .arrow {
   top: 30px;
   color: #089af5;
+  font-size: 1.5em;
 }
 
 .twitter-text p:first-child,
