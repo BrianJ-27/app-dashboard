@@ -1,9 +1,24 @@
+// Search button at top
+.search-button{
+  height:30px;
+  border-radius: 5px;
+  align-self: center;
+  height: 30px; 
+  outline: none;
+  background: $primary-light;
+}
+
+.search-icon{
+  width: 17px;
+  fill: $white;   
+}
+
 
 //Traffic Buttons 
 .traffic-nav{
   align-items: center;
   & li {
-      background: $primary;
+      background: $primary-light;
       border-radius: 10px;
       list-style-type: none;
       margin-top: 1em;
@@ -23,27 +38,27 @@
 .button-primary{
   margin: 1em 0;
   width: 100%;
-  background: $primary;
+  background: $primary-light;
   color: $white;
   @extend %padding;
-
+  &:hover{
+    background: $primary-light;
+  }
 }
 
 /*-------Settings button Styles---------*/
 
 .settings{
-  width: 90%;
   margin: 0 auto;
-}
-
-.settings-button{
-  @include flex_me($just: space-between);
-  width: 100%;
-  margin: 0 auto;
+  &-button{
+    @include flex_me($just: space-between);
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .button-save{
-  background: $primary;
+  background: $primary-light;
   color: $white;
   @extend %padding;
   width: 45%;
@@ -104,11 +119,11 @@
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: $primary-light;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px $primary-light;
   }
   
   input:checked + .slider:before {

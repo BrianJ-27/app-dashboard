@@ -12,6 +12,11 @@
 textarea, .search-input {
   padding: 0.5em;
   border-radius: 5px;
+  outline: none;
+}
+.button-disabled:focus, .button-save:focus, .button-primary:focus, .form-field:focus,
+textarea:focus, .search-input:focus {
+  border: 2px solid #089af5;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -396,10 +401,12 @@ h3 {
 @media (min-width: 768px) {
   h3 {
     text-align: left;
+    margin-left: 1em;
   }
 }
 
 section {
+  width: 100%;
   border-bottom: 1px solid #8c8c8c;
   display: flex;
   flex-direction: column;
@@ -410,6 +417,11 @@ section {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -518,17 +530,6 @@ main {
   margin-top: 0;
 }
 
-.seacrh-button {
-  height: 30px;
-  border-radius: 5px;
-  align-self: center;
-  height: 30px;
-}
-
-.search-icon {
-  width: 17px;
-}
-
 .search-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -548,9 +549,13 @@ main {
 .alert-wrapper strong {
   color: #000;
   padding-right: 5px;
+  border-right: 1px solid #fff;
+  padding-right: 5px;
 }
 .alert-wrapper p {
   display: flex;
+  font-size: 0.95em;
+  padding-left: 5px;
 }
 
 .alert-wrapper p::after {
@@ -611,7 +616,7 @@ main {
   border-radius: 15px;
   margin-bottom: 1em;
   padding: 10px;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -632,36 +637,25 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  background: #089af5;
-  margin-top: 1em;
+  background: #9ad6fc;
 }
 
 .members-container,
-.last-member-container {
+.last-member-container,
+.members-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 768px) {
-  .members-container,
-.last-member-container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.members-container p,
-.last-member-container p {
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 .members-container,
 .last-member-container {
-  padding: 1em 0;
+  position: relative;
+  padding: 1.5em 0;
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .members-container,
@@ -671,22 +665,35 @@ main {
 }
 
 .members-container {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #8c8c8c;
   padding-bottom: 5px;
+}
+
+.members-text {
+  width: 80%;
+  padding-left: 0.8em;
+}
+.members-text + p {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.members-text p {
+  width: 100%;
 }
 
 .twitter-text p:first-child,
 .facebook-text p:first-child,
 .google-text p:first-child {
   color: #089af5;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
 .twitter-text p:last-child,
 .facebook-text p:last-child,
 .google-text p:last-child {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 nav {
@@ -719,7 +726,6 @@ nav {
   height: 30px;
   width: 80%;
   align-self: center;
-  margin-right: 0.3em;
 }
 
 .widget-container {
@@ -740,11 +746,29 @@ textarea {
   height: 125px;
 }
 
+.profile-image {
+  height: 2.1875em;
+}
+
+.search-button {
+  height: 30px;
+  border-radius: 5px;
+  align-self: center;
+  height: 30px;
+  outline: none;
+  background: #9ad6fc;
+}
+
+.search-icon {
+  width: 17px;
+  fill: #fff;
+}
+
 .traffic-nav {
   align-items: center;
 }
 .traffic-nav li {
-  background: #089af5;
+  background: #9ad6fc;
   border-radius: 10px;
   list-style-type: none;
   margin-top: 1em;
@@ -764,16 +788,17 @@ textarea {
 .button-primary {
   margin: 1em 0;
   width: 100%;
-  background: #089af5;
+  background: #9ad6fc;
   color: #fff;
+}
+.button-primary:hover {
+  background: #9ad6fc;
 }
 
 /*-------Settings button Styles---------*/
 .settings {
-  width: 90%;
   margin: 0 auto;
 }
-
 .settings-button {
   display: flex;
   justify-content: space-between;
@@ -782,7 +807,7 @@ textarea {
 }
 
 .button-save {
-  background: #089af5;
+  background: #9ad6fc;
   color: #fff;
   width: 45%;
   margin: 1em 0;
@@ -841,11 +866,11 @@ textarea {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #9ad6fc;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #9ad6fc;
 }
 
 input:checked + .slider:before {

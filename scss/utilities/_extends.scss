@@ -35,4 +35,8 @@
   %padding {
     padding: .5em;
     border-radius: 5px;
+    outline: none;
+    &:focus{
+      border: 2px solid $primary;
+    }
   }
