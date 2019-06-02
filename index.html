@@ -147,25 +147,25 @@
             </div>
     <!----------------------LINE GRAPH SECTION-------------------------------->
           <div class="main-grid-wrapper">
+              
             <section class="traffic">
-                <h3>Traffic</h3>
-                <div class="traffic-header">  
+                  <h3>Traffic</h3> 
                   <ul class="traffic-nav">
                     <li class="traffic-nav-link">Hourly</li>
                     <li class="traffic-nav-link">Daily</li>
                     <li class="traffic-nav-link active">Weekly</li>
                     <li class="traffic-nav-link">Monthly</li>
                   </ul>
-                </div>
-                <div class="widget-container-full">
-                <!-- element line graph will attach to -->
-                  <canvas id="traffic-chart"></canvas>
-                </div>
+                  <div class="widget-container-full">
+                  <!-- element line graph will attach to -->
+                    <canvas id="traffic-chart"></canvas>
+                  </div>
             </section>
     <!----------------------BAR GRAPH SECTION-------------------------------->
             <section class="daily">
-                 <h3>Daily Traffic</h3>
+                  <h3>Daily Traffic</h3>
                   <div class="widget-container-half">
+                        
                         <!-- element bar graph will attach to -->
                         <canvas id="daily-chart"></canvas>
                   </div>
@@ -331,18 +331,19 @@
   <!----------------------SETTINGS SECTION----------------------------------->        
             <section class="settings" id="settings">
                 <h3>Settings</h3>
+                <form>
                   <div class="email-settings">
                         <p>Send Email Notifications</p>
                         <label class="switch">
                             <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <span class="slider round">on</span>
                         </label>
                   </div>
                   <div class="profile-settings">
                         <p>Send Profile to Public</p>
                         <label class="switch">
                             <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <span class="slider round">on</span>
                         </label>
                   </div>
                   <select class="form-field" id="timezone">
@@ -353,7 +354,8 @@
                   <div class="settings-button" >
                         <button class="button-save" id="save">Save</button>
                         <button class="button-disabled" id="cancel">Cancel</button>
-                  </div>    
+                  </div>  
+                </form>  
             </section>
           </div>
         </main>
