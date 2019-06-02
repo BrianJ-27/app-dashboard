@@ -65,6 +65,10 @@
   font-size: 1em;
   padding: 1em; 
   margin-top: 0; 
+  @include mq('md'){
+    font-size: 1.5em;
+    padding: .5em;
+  }
 
 }
 // container for search bar
