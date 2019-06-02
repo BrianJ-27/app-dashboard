@@ -82,6 +82,7 @@
 .members-text{
     width: 80%;
     padding-left: .8em;
+    padding-bottom: 1em;
     & + p{
       position: absolute;
       top: 15px;
@@ -90,6 +91,10 @@
     & p {
          width: 100%;
        }
+    & + .arrow {
+        top: 30px;
+        color: $primary;
+      }
     }
 
 

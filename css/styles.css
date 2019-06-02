@@ -665,6 +665,7 @@ main {
 .members-text {
   width: 80%;
   padding-left: 0.8em;
+  padding-bottom: 1em;
 }
 .members-text + p {
   position: absolute;
@@ -673,6 +674,10 @@ main {
 }
 .members-text p {
   width: 100%;
+}
+.members-text + .arrow {
+  top: 30px;
+  color: #089af5;
 }
 
 .twitter-text p:first-child,
