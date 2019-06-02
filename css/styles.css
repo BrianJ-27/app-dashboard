@@ -541,6 +541,7 @@ main {
 
 .alert-wrapper {
   background: #9ad6fc;
+  position: relative;
   width: 80%;
   margin: 0 auto;
   color: #fff;
@@ -548,19 +549,20 @@ main {
 }
 .alert-wrapper strong {
   color: #000;
-  padding-right: 5px;
-  border-right: 1px solid #fff;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 .alert-wrapper p {
   display: flex;
   font-size: 0.95em;
-  padding-left: 5px;
+  padding: 5px 10px 0 5px;
 }
 
 .alert-wrapper p::after {
   content: "×";
   font-size: 2em;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 @media (min-width: 768px) {
@@ -571,37 +573,15 @@ main {
   }
 }
 
-.twitter-text,
-.facebook-text,
-.google-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1em 0;
-}
-@media (min-width: 768px) {
-  .social-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
 .icon-wrapper {
   background: #E8E8E8;
   border: 1px solid #606060;
   border-radius: 15px;
   margin-bottom: 1em;
-  padding: 10px;
+  padding: 20px;
   width: 80%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 1em;
 }
@@ -617,13 +597,43 @@ main {
 .social-twitter,
 .social-facebook,
 .social-google {
+  border-radius: 50%;
+  background: #9ad6fc;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   width: 70px;
-  border-radius: 50%;
-  background: #9ad6fc;
+}
+@media (min-width: 768px) {
+  .social-twitter,
+.social-facebook,
+.social-google {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.twitter-text,
+.facebook-text,
+.google-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5em;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
+}
+@media (min-width: 768px) {
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .members-container,
@@ -671,6 +681,13 @@ main {
   color: #089af5;
   font-size: 1.5em;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .twitter-text p:first-child,
+.facebook-text p:first-child,
+.google-text p:first-child {
+    font-size: 1.2em;
+  }
 }
 
 .twitter-text p:last-child,

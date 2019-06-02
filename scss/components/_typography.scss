@@ -5,6 +5,9 @@
     color: $primary;
     font-size: 1.5em;
     font-weight: 500;
+    @include mq('md'){
+        font-size: 1.2em;
+    }
 }
 
 .twitter-text p:last-child,

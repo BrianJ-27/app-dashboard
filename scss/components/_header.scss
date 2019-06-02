@@ -1,23 +1,23 @@
-
+//Light Blue Top Header
 .my-header{
   @include flex_me($just: flex-end, $vertAlign: center);
   background-color: $primary-light;
   padding: 5px;
 }
-
+// container for user picture & name
 .user-profile{
   border-left: 1px solid $white;
   padding-left: 7px;
   @include flex_me($just:null);
  
 }
-
+// SVG for the bell icon in top header
 .bell{
   width: px-to-ems(20px);
   fill: $white;
   margin-right: 7px;
 }
-
+// Green notification dot in where bell icon is
 .notification-circle{
   cursor: pointer;
   position: absolute;
@@ -28,7 +28,7 @@
   height: 9px;
   border-radius: 50%;
 }
-
+// style for header user profle picture
 .my-pic{
   height: px-to-ems(35px); 
 }
@@ -46,3 +46,58 @@
   @include txt-cntrd;
 }
 
+//Dashboard Header & Header Alert box Styles//
+
+//Dashboard & Search bar Wrapper
+.main-header{
+  @include flex_me(
+       $dir: row,
+       $wrap: wrap,
+       $just: space-between
+   );
+   margin-bottom: 1em;
+} 
+// Main Dashboard Header Styles
+
+// Dark Grey Header Dashboard Styles
+.db-title{
+  flex-basis: 35%;
+  font-size: 1em;
+  padding: 1em; 
+  margin-top: 0; 
+
+}
+// container for search bar
+.search-wrapper{
+  @include flex_me($just: flex-end);
+  height: 50px;
+  background: #E8E8E8;
+  flex-basis: 65%;
+  border-radius: 3px 0 0 6px;
+}
+// Container for alert box 
+.alert-wrapper{
+  background: $primary-light;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  color: $white;
+  padding: 15px; 
+  & strong{
+      color: $mid-night-darkness;
+      padding-right: 10px;
+  }
+  & p{
+      @include flex_me();
+      font-size: .95em;
+      padding: 5px 10px 0 5px;
+  }
+}
+
+.alert-wrapper p::after{
+  content: "\00d7";
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}

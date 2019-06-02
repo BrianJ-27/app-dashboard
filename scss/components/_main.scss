@@ -1,55 +1,3 @@
-
-
-//Dashboard & Search bar Wrapper
-.main-header{
-    @include flex_me(
-         $dir: row,
-         $wrap: wrap,
-         $just: space-between
-     );
-     margin-bottom: 1em;
-} 
-// Main Dashboard Header Styles
-.db-title{
-    flex-basis: 35%;
-    font-size: 1em;
-    padding: 1em; 
-    margin-top: 0; 
-
-}
-
-.search-wrapper{
-    @include flex_me($just: flex-end);
-    height: 50px;
-    background: #E8E8E8;
-    flex-basis: 65%;
-    border-radius: 3px 0 0 6px;
-}
-
-.alert-wrapper{
-    background: $primary-light;
-    width: 80%;
-    margin: 0 auto;
-    color: $white;
-    padding: 15px; 
-    & strong{
-        color: $mid-night-darkness;
-        padding-right: 5px;
-        border-right: 1px solid $white;
-        padding-right: 5px;
-    }
-    & p{
-        @include flex_me();
-        font-size: .95em;
-        padding-left: 5px;
-    }
-}
-
-.alert-wrapper p::after{
-    content: "\00d7";
-    font-size: 2em;
-}
-
 // placing the vertical line to split the content up
 .daily,
 .new-members,
@@ -59,29 +7,17 @@
     }
 }
 
-// Laying out social media section
-.twitter-text,
-.facebook-text,
-.google-text{
-    @include flex_me($dir:column, $vertAlign: center);
-}
+// Laying out social media section//
 
-.social-container{
-    @include flex_me($dir:column, $vertAlign:center);
-    margin: 1em 0;
-    @include mq('md'){
-        @include flex_me($dir: row, $just: space-around);
-    }
-}
 // Gray background for Social Media Icons
 .icon-wrapper{
     background: #E8E8E8;
     border: 1px solid $font-color;
     border-radius: 15px;
     margin-bottom: 1em;
-    padding: 10px;
+    padding: 20px;
     width: 80%;
-    @include flex_me($dir:column, $vertAlign:center);
+    @include flex_me($just: center, $vertAlign:center);
     margin-top: 1em;
     @include mq('md'){
         @include flex_me($dir: row);
@@ -93,11 +29,31 @@
 .social-twitter,
 .social-facebook,
 .social-google{
+    border-radius: 50%;
+    background: $primary-light;
     @include flex_me($just:center, $vertAlign: center);
     height: 70px;
     width: 70px;
-    border-radius: 50%;
-    background: $primary-light;
+    @include mq('md'){
+       height: 50px;
+       width: 50px; 
+    }
+}
+
+// Social Media Text Layout
+.twitter-text,
+.facebook-text,
+.google-text{
+    @include flex_me($dir:column);
+    padding-left: 1.5em;
+}
+
+.social-container{
+    @include flex_me($dir:column, $vertAlign:center);
+    margin: 1em 0;
+    @include mq('md'){
+        @include flex_me($dir: row, $just: space-around);
+    }
 }
 
 // Laying out The New Member & Recent Activity section
