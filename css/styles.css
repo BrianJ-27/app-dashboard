@@ -571,23 +571,6 @@ main {
   }
 }
 
-.traffic-nav {
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .traffic-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.traffic-nav li {
-  margin: 0.5em;
-}
-
 .twitter-text,
 .facebook-text,
 .google-text {
@@ -765,16 +748,22 @@ textarea {
 }
 
 .traffic-nav {
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .traffic-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+  }
 }
 .traffic-nav li {
-  background: #9ad6fc;
   border-radius: 10px;
   list-style-type: none;
   margin-top: 1em;
-  width: 100px;
-  padding: 5px;
-  text-align: center;
+  padding: 8px;
 }
 .traffic-nav li:hover {
   background: green;

@@ -14,26 +14,28 @@
 }
 
 
-//Traffic Buttons 
+//Lay out & Style of Traffic Buttons 
 .traffic-nav{
-  align-items: center;
-  & li {
-      background: $primary-light;
-      border-radius: 10px;
-      list-style-type: none;
-      margin-top: 1em;
-      width: 100px;
-      padding: 5px;
-      text-align: center;
+  @include flex_me($wrap: wrap, $just: center);
+  @include mq('md'){
+    @include flex_me($just: flex-end);
+     margin-right: 2em;
+  }
+    & li {
+        border-radius: 10px;
+        list-style-type: none;
+        margin-top: 1em;
+        padding: 8px;
+  }
+  & li:hover{
+    background: green;
+    border-radius: 10px;
+    transition: background .8s;
+    color: #fff;
+    cursor: pointer;
+  }
 }
-& li:hover{
-  background: green;
-  border-radius: 10px;
-  transition: background .8s;
-  color: #fff;
-  cursor: pointer;
-}
-}
+
 /*-------Message button Styles---------*/
 .button-primary{
   margin: 1em 0;

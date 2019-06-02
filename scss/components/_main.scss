@@ -58,18 +58,6 @@
         border-right: 1px solid $font-color-secondary;
     }
 }
-// Laying out traffic section
-
-.traffic-nav{
-    padding: 1em;
-    @include flex_me($wrap: wrap, $just:center);
-    @include mq('md'){
-        @include flex_me($dir:row,$just: space-between);
-    }
-    & li{
-        margin: .5em;
-    }
-}
 
 // Laying out social media section
 .twitter-text,
