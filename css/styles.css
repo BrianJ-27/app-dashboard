@@ -599,7 +599,7 @@ main {
   position: relative; }
 
 .widget-container-half {
-  width: calc(100vw - 55px - 4em /2);
+  width: calc((100vw - 55px - 4em) / 2);
   position: relative; }
 
 .twitter-text p:first-child,

@@ -28,5 +28,22 @@ var myBarChart = new Chart(bar, {
             backgroundColor: 'rgba(8, 154, 245, 0.6)'
         }]
     },
-    options: options
+    options: {}
+});
+
+var doughnut = document.getElementById('doughnut-chart').getContext('2d');
+var myDoughnutChart = new Chart(doughnut, {
+    type: 'doughnut',
+    data: {
+        labels: ['phones', 'tablets', 'desktop'],
+        datasets:[{
+            data:[25, 50, 75],
+            backgroundColor: [
+                'green',
+                'teal',
+                'rgba(8, 154, 245, 0.6)' 
+           ]
+        }]
+    },
+    options: {}
 });
