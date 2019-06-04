@@ -98,14 +98,19 @@
       }
     }
 
-.widget-container-full{
+.widget-container-full,
+.widget-container-half{
     width: calc(100vw - 55px - 2em);
     position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 .widget-container-half{
-    width: calc((100vw - 55px - 4em) / 2);
-    position: relative;
+    @include mq('md'){
+        width: calc((100vw - 55px - 4em) / 2);
+        position: relative;
+ }
 }
 
 
