@@ -21,12 +21,15 @@
 .notification-circle{
   cursor: pointer;
   position: absolute;
-  right: px-to-ems(140px);
+  right: 7.9em;
   top: px-to-ems(10px);    
   background-color: #1ACE05;
   width: 9px;
   height: 9px;
   border-radius: 50%;
+  @include mq('md'){
+    right: 8.7em;
+  }
 }
 // style for header user profle picture
 .my-pic{

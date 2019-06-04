@@ -15,64 +15,6 @@ textarea, .button-primary, .button-save, .button-disabled {
   textarea:focus, .button-primary:focus, .button-save:focus, .button-disabled:focus {
     border: 2px solid #089af5; }
 
-* {
-  box-sizing: border-box; }
-
-body,
-header,
-nav,
-section,
-div,
-ul,
-p,
-h1,
-h2,
-h3,
-form {
-  margin: 0;
-  padding: 0; }
-
-h1 {
-  display: inline-block;
-  flex: 1;
-  font-size: 0.875em;
-  font-style: italic;
-  color: #fff; }
-
-span {
-  font-size: 1.4375em;
-  padding-left: 0.1875em; }
-
-h2,
-h3 {
-  color: #606060;
-  font-size: 1em;
-  text-align: center;
-  margin-top: 1em; }
-
-@media (min-width: 768px) {
-  h3 {
-    text-align: left;
-    margin-left: 1em; } }
-
-section {
-  width: 100%;
-  border-bottom: 1px solid #8c8c8c;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
-  @media (min-width: 768px) {
-    section {
-      display: flex;
-      flex-wrap: wrap; } }
-
-form {
-  width: 90%;
-  margin: 0 auto; }
-
-a {
-  text-decoration: none; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -378,6 +320,64 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
+body,
+header,
+nav,
+section,
+div,
+ul,
+p,
+h1,
+h2,
+h3,
+form {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  display: inline-block;
+  flex: 1;
+  font-size: 0.9375em;
+  font-style: italic;
+  color: #fff; }
+
+span {
+  font-size: 1.4375em;
+  padding-left: 0.1875em; }
+
+h2,
+h3 {
+  color: #606060;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1em; }
+
+@media (min-width: 768px) {
+  h3 {
+    text-align: left;
+    margin-left: 1em; } }
+
+section {
+  width: 100%;
+  border-bottom: 1px solid #8c8c8c;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    section {
+      display: flex;
+      flex-wrap: wrap; } }
+
+form {
+  width: 90%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
 .grid_wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -428,12 +428,15 @@ main {
 .notification-circle {
   cursor: pointer;
   position: absolute;
-  right: 8.75em;
+  right: 7.9em;
   top: 0.625em;
   background-color: #1ACE05;
   width: 9px;
   height: 9px;
   border-radius: 50%; }
+  @media (min-width: 768px) {
+    .notification-circle {
+      right: 8.7em; } }
 
 .my-pic {
   height: 2.1875em; }
