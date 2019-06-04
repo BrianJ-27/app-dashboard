@@ -1,5 +1,5 @@
 var ctx = document.getElementById('traffic-chart').getContext('2d');
-var bar = document.getElementById('daily-chart').getContext('2d');
+
 
 var chart = new Chart(ctx, {
     type: 'line',
@@ -18,10 +18,15 @@ var chart = new Chart(ctx, {
     options: {}
 });
 
+var bar = document.getElementById('daily-chart').getContext('2d');
 var myBarChart = new Chart(bar, {
     type: 'bar',
     data: {
-        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+        labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+        datasets:[{
+            data:[50, 100, 150, 200, 250],
+            backgroundColor: 'rgba(8, 154, 245, 0.6)'
+        }]
     },
     options: options
 });
