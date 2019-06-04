@@ -98,6 +98,16 @@
       }
     }
 
+.widget-container-full{
+    width: calc(100vw - 55px - 2em);
+    position: relative;
+}
+
+.widget-container-half{
+    width: calc(100vw - 55px - 4em /2);
+    position: relative;
+}
+
 
 
 

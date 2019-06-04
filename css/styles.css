@@ -594,6 +594,14 @@ main {
     color: #089af5;
     font-size: 1.5em; }
 
+.widget-container-full {
+  width: calc(100vw - 55px - 2em);
+  position: relative; }
+
+.widget-container-half {
+  width: calc(100vw - 55px - 4em /2);
+  position: relative; }
+
 .twitter-text p:first-child,
 .facebook-text p:first-child,
 .google-text p:first-child {
