@@ -67,5 +67,9 @@ var myDoughnutChart = new Chart(doughnut, {
            ]
         }]
     },
-    options: {}
+    options: {
+        legend:{
+            display: true,
+        }
+    }
 });
