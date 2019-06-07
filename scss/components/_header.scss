@@ -11,20 +11,7 @@
   @include flex_me($just:null);
  
 }
-// SVG for the bell icon in top header
-.bell-alert{
-  transition: transform .5s ease-in-out;
-}
-.bell-alert:hover{
-  transform: scale(1.5);
-}
 
-.bell-alert svg{
-  width: px-to-ems(20px);
-  height: px-to-ems(20px);
-  fill: $white;
-  margin-right: 7px;
-}
 // Green notification dot in where bell icon is
 .notification-circle{
   cursor: pointer;

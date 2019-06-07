@@ -16,13 +16,20 @@
     height: px-to-ems(35px); 
   }
 /* ------------ICONS---------------*/
-// bell icon
-.bell-alert svg{
+// SVG for the bell icon in top header
+.bell{
   width: px-to-ems(20px);
   height: px-to-ems(20px);
   fill: #fff;
   margin-right: 7px;
+  transition: transform .6s ease-in-out;
+  transform-origin: 50% 50%;
 }
+
+.bell:hover{
+  transform: scale(1.1) rotate(25deg);
+}
+
 
 //Search Icon
   .search-button svg{
