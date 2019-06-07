@@ -12,6 +12,13 @@
  
 }
 // SVG for the bell icon in top header
+.bell-alert{
+  transition: transform .5s ease-in-out;
+}
+.bell-alert:hover{
+  transform: scale(1.5);
+}
+
 .bell-alert svg{
   width: px-to-ems(20px);
   height: px-to-ems(20px);
@@ -28,6 +35,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
+  
   @include mq('md'){
     right: 8.7em;
   }
