@@ -527,7 +527,8 @@ main {
   font-size: 2em;
   position: absolute;
   top: 0;
-  right: 5px; }
+  right: 5px;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .daily,
