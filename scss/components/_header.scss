@@ -12,8 +12,9 @@
  
 }
 // SVG for the bell icon in top header
-.bell{
+.bell-alert svg{
   width: px-to-ems(20px);
+  height: px-to-ems(20px);
   fill: $white;
   margin-right: 7px;
 }
@@ -30,10 +31,6 @@
   @include mq('md'){
     right: 8.7em;
   }
-}
-// style for header user profle picture
-.my-pic{
-  height: px-to-ems(35px); 
 }
 
 .notify-message-box{

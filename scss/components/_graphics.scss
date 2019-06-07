@@ -1,0 +1,40 @@
+/* ------------IMAGES---------------*/
+
+//small user pictures
+.my-pic,
+.circle{
+    @extend %roundyImg;
+}
+
+// style for header user profle picture
+.my-pic{
+    height: px-to-ems(35px); 
+  }
+
+//personal profile picture
+.profile-image{
+    height: px-to-ems(35px); 
+  }
+/* ------------ICONS---------------*/
+
+//Search Icon
+  .search-button svg{
+    width: 17px;
+    height: 17px;
+    fill: $white;   
+  }
+//Navigation Icons 
+  .nav-wrapper svg {
+    width: px-to-ems(25px);
+    height: px-to-ems(25px);
+    margin: 7px;
+    fill: #fff;
+}
+// Social Media Icons
+.social-google > svg,
+.social-facebook > svg,
+.social-twitter > svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}

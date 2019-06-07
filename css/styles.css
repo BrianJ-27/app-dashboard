@@ -420,8 +420,9 @@ main {
   padding-left: 7px;
   display: flex; }
 
-.bell {
+.bell-alert svg {
   width: 1.25em;
+  height: 1.25em;
   fill: #fff;
   margin-right: 7px; }
 
@@ -437,9 +438,6 @@ main {
   @media (min-width: 768px) {
     .notification-circle {
       right: 8.7em; } }
-
-.my-pic {
-  height: 2.1875em; }
 
 .notify-message-box {
   display: none; }
@@ -639,11 +637,6 @@ nav {
       padding: 0;
       margin: 10px; } }
 
-.icons {
-  fill: #fff;
-  width: 1.5625em;
-  margin: 7px; }
-
 .search-input {
   height: 30px;
   width: 80%;
@@ -670,8 +663,31 @@ textarea {
 textarea {
   height: 125px; }
 
+/* ------------IMAGES---------------*/
+.my-pic {
+  height: 2.1875em; }
+
 .profile-image {
   height: 2.1875em; }
+
+/* ------------ICONS---------------*/
+.search-button svg {
+  width: 17px;
+  height: 17px;
+  fill: #fff; }
+
+.nav-wrapper svg {
+  width: 1.5625em;
+  height: 1.5625em;
+  margin: 7px;
+  fill: #fff; }
+
+.social-google > svg,
+.social-facebook > svg,
+.social-twitter > svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff; }
 
 .search-button {
   height: 30px;
@@ -680,10 +696,6 @@ textarea {
   height: 30px;
   outline: none;
   background: #9ad6fc; }
-
-.search-icon {
-  width: 17px;
-  fill: #fff; }
 
 .traffic-nav {
   display: flex;
