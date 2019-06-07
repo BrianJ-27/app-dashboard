@@ -12,11 +12,13 @@
 // Gray background for Social Media Icons
 .icon-wrapper{
     background: #E8E8E8;
+    position: relative;
     border: 1px solid $font-color;
     border-radius: 15px;
     margin-bottom: 1em;
     padding: 20px;
     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @include flex_me($just: center, $vertAlign:center);
     margin-top: 1em;
     @include mq('md'){
@@ -25,6 +27,7 @@
         padding: 10px;
     }
 }
+
 // Blue Circle for social icons
 .social-twitter,
 .social-facebook,
