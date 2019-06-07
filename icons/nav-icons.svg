@@ -102,8 +102,57 @@
  	</symbol>
 </svg>
 
+<!--
 
+**//I HAD TO REMOVE THESE EXTERNAL SVG'S FROM THE HTML FILE FOR THIS PROJECT BUT 
+ON REAL WORLD PROJECTS, I CAN ONLY USE SVG'S ON A SERVER. EXTERNAL SVG'S DON'T 
+SHOW UP WHEN WORKING ON LOCALLY. INLINE SVGS WORK..//**
 
+//DASHBOARD ICON
+<svg class="dashboard">
+    <use xlink:href="icons/nav-icons.svg#dashboard">
+</svg>
+
+//MEMBER ICON
+<svg class="member">
+    <use xlink:href="icons/nav-icons.svg#member">
+</svg>
+
+//VISITS ICON
+<svg class="visits">
+    <use xlink:href="icons/nav-icons.svg#visits">
+</svg>
+//SETTINGS ICON
+<svg class="settings">
+    <use xlink:href="icons/nav-icons.svg#settings">
+</svg>
+
+//BELL ICON
+<svg class="bell">
+    <use xlink:href="icons/nav-icons.svg#bell">
+</svg>
+
+//SEARCH ICON
+<svg class="search">
+    <use xlink:href="icons/nav-icons.svg#search">
+</svg>
+
+//FACEBOOK ICON
+<svg class="facebook">
+    <use xlink:href="icons/nav-icons.svg#facebook">
+</svg>
+
+//GOOGLE ICON
+<svg class="google">
+    <use xlink:href="icons/nav-icons.svg#google">
+</svg>
+
+//TWITTER ICON
+<svg class="twitter">
+    <use xlink:href="icons/nav-icons.svg#twitter">
+</svg>
+
+-->
 
 
 
