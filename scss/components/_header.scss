@@ -3,6 +3,8 @@
   @include flex_me($just: flex-end, $vertAlign: center);
   background-color: $primary-light;
   padding: 5px;
+  z-index: 10;
+  box-shadow: 0 8px 6px -6px black;
 }
 // container for user picture & name
 .user-profile{

@@ -450,7 +450,9 @@ main {
   justify-content: flex-end;
   align-items: center;
   background-color: #9ad6fc;
-  padding: 5px; }
+  padding: 5px;
+  z-index: 10;
+  box-shadow: 0 8px 6px -6px black; }
 
 .user-profile {
   border-left: 1px solid #fff;
