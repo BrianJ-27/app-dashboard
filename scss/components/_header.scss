@@ -95,8 +95,7 @@
   }
 }
 
-.alert-wrapper p::after{
-  content: "\00d7";
+.alert-wrapper span{
   font-size: 2em;
   position: absolute;
   top: 0;

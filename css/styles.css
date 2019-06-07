@@ -523,8 +523,7 @@ main {
     font-size: .95em;
     padding: 5px 10px 0 5px; }
 
-.alert-wrapper p::after {
-  content: "\00d7";
+.alert-wrapper span {
   font-size: 2em;
   position: absolute;
   top: 0;
@@ -538,7 +537,6 @@ main {
 
 .icon-wrapper {
   background: #E8E8E8;
-  position: relative;
   border: 1px solid #606060;
   border-radius: 15px;
   margin-bottom: 1em;

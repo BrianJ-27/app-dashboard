@@ -73,3 +73,10 @@ var myDoughnutChart = new Chart(doughnut, {
         }
     }
 });
+
+const xAlert = document.querySelector(".xbox");
+
+xAlert.addEventListener("click", () => {
+  let alertBox = document.querySelector(".alert-wrapper");
+  alertBox.style.display = "none";
+})
