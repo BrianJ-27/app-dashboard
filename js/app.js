@@ -80,3 +80,13 @@ xAlert.addEventListener("click", () => {
   let alertBox = document.querySelector(".alert-wrapper");
   alertBox.style.display = "none";
 })
+
+//Form Controls
+const form = document.querySelector("form");
+const input = form.querySelector("#send , #messageField");
+
+form.addEventListener("submit", (e)=> {
+    preventDefault();
+    console.log(input.value);
+})
+
