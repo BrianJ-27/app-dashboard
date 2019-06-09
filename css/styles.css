@@ -988,7 +988,7 @@ textarea {
 .email-settings,
 .profile-settings {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0.94em auto;
   /*first declaring a local variable (ex) $value) that stores a value associated 
     with a given key and a breakpoints map*/
@@ -1002,20 +1002,14 @@ textarea {
 }
 
 .p-settings {
+  padding-top: 6px;
+  flex-basis: 60%;
   /*first declaring a local variable (ex) $value) that stores a value associated 
     with a given key and a breakpoints map*/
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-}
-@media (min-width: 768px) {
-  .p-settings {
-    flex-basis: 30%;
-    padding-top: 6px;
-  }
 }
 @media (min-width: 1024px) {
   .p-settings {
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 }
 

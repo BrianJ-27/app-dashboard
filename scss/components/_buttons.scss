@@ -72,7 +72,7 @@
 
 .email-settings,
 .profile-settings{
-  @include flex_me($just: space-between);
+  @include flex_me($just: space-around);
   margin: .94em auto;
   @include mq('md'){
     @include flex_me($just: flex-start); 
@@ -80,12 +80,10 @@
 }
 
 .p-settings{
-  @include mq('md'){
-    flex-basis: 30%;
-    padding-top: 6px;
-  }
+  padding-top: 6px;
+  flex-basis: 60%;
   @include mq('lg'){
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 }
 
