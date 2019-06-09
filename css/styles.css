@@ -856,7 +856,7 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 0 30px;
+  padding: 35px;
   /*first declaring a local variable (ex) $value) that stores a value associated 
     with a given key and a breakpoints map*/
 }
@@ -865,8 +865,17 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 20px 0;
   }
+}
+.nav-wrapper li {
+  list-style-type: none;
+}
+.nav-wrapper li:hover {
+  background: #9ad6fc;
+}
+.nav-wrapper a {
+  padding: 10px;
 }
 
 .search-input {

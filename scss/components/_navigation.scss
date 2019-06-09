@@ -5,9 +5,18 @@ nav {
 .nav-wrapper{
     @include flex_me($just: space-around);
     margin: 0;
-    padding: 0 30px;
+    padding:  35px;
     @include mq('md'){
         @include flex_me($dir: column, $just:center);
+        padding: 20px 0;
+    }
+    & li{
+        list-style-type: none;
+        &:hover{
+            background: $primary-light; 
+        }
+    }
+    & a{
         padding: 10px;
     } 
 }
