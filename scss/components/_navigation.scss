@@ -12,7 +12,8 @@ nav {
     }
     & li{
         list-style-type: none;
-        &:hover{
+        &:hover,
+        &:active{
             background: $primary-light; 
         }
     }

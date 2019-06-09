@@ -871,7 +871,7 @@ nav {
 .nav-wrapper li {
   list-style-type: none;
 }
-.nav-wrapper li:hover {
+.nav-wrapper li:hover, .nav-wrapper li:active {
   background: #9ad6fc;
 }
 .nav-wrapper a {
