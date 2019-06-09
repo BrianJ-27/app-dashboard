@@ -1,7 +1,7 @@
-var ctx = document.getElementById('traffic-chart').getContext('2d');
+const ctx = document.getElementById('traffic-chart').getContext('2d');
 Chart.defaults.global.legend.display = false
 
-var chart = new Chart(ctx, {
+const chart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['16-22', '23-29', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
