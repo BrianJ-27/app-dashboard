@@ -49,10 +49,15 @@ h3{
 section{
     width: 100%;
     border-bottom: 1px solid $font-color-secondary;
+    position: relative;
     @include flex_me($dir:column, $wrap: wrap);
     @include mq('md') {
      @include flex_me($wrap: wrap);
     }
+}
+
+section h3{
+    padding-bottom: 1em;
 }
 
 form{

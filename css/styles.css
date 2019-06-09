@@ -363,6 +363,7 @@ h3 {
 section {
   width: 100%;
   border-bottom: 1px solid #8c8c8c;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
@@ -370,6 +371,9 @@ section {
     section {
       display: flex;
       flex-wrap: wrap; } }
+
+section h3 {
+  padding-bottom: 1em; }
 
 form {
   width: 90%;
@@ -686,13 +690,16 @@ nav {
 form {
   padding-top: 1em; }
 
+#userField {
+  margin-top: 0px; }
+
 .form-field,
 textarea {
   width: 100%;
   margin-top: 1em; }
 
 .timezone {
-  margin-top: 2.8em; }
+  margin-top: 1.9em; }
 
 textarea {
   height: 125px; }
@@ -760,7 +767,7 @@ textarea {
 .profile-settings {
   display: flex;
   justify-content: space-between;
-  margin: 1em 0; }
+  margin: .94em 0; }
 
 /*----------Toggle Switch/ button Styles----------*/
 .switch {
