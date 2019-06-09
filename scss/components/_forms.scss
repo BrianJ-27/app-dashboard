@@ -5,6 +5,9 @@
     width: 80%;
     align-self: center;
     @extend %padding;
+    @include mq('lg'){
+      width: 60%;  
+  }
 }
 
 .widget-container{

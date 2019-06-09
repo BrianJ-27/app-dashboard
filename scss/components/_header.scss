@@ -5,6 +5,9 @@
   padding: 5px;
   z-index: 10;
   box-shadow: 0 8px 6px -6px black;
+  @include mq('md'){
+    padding: 5px 5px;
+  }
 }
 // container for user picture & name
 .user-profile{
@@ -66,7 +69,14 @@
     font-size: 1.5em;
     padding: .5em;
   }
-
+  @include mq('lg'){
+    flex-basis: 30%;
+    font-size: 1.8em;
+  }
+  &:hover{
+    color: $accent-color;
+    transition: color .6s ease-out;
+  }
 }
 // container for search bar
 .search-wrapper{
@@ -75,6 +85,10 @@
   background: #E8E8E8;
   flex-basis: 65%;
   border-radius: 3px 0 0 6px;
+  @include mq('lg'){
+    flex-basis: 70%;
+    font-size: .9em;
+  }
 }
 // Container for alert box 
 .alert-wrapper{
