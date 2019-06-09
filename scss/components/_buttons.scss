@@ -73,7 +73,20 @@
 .email-settings,
 .profile-settings{
   @include flex_me($just: space-between);
-  margin: .94em 0;
+  margin: .94em auto;
+  @include mq('md'){
+    @include flex_me($just: flex-start); 
+  }
+}
+
+.p-settings{
+  @include mq('md'){
+    flex-basis: 30%;
+    padding-top: 6px;
+  }
+  @include mq('lg'){
+    flex-basis: 50%;
+  }
 }
 
 /*----------Toggle Switch/ button Styles----------*/
