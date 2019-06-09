@@ -43,6 +43,11 @@
     height: px-to-ems(25px);
     margin: 7px;
     fill: #fff;
+    &:hover{
+      fill: $accent-color;
+      transition: all .4s ease-in;
+      transform: scale(1.2);
+    }
 }
 // Social Media Icons
 .social-google > svg,
