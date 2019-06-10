@@ -644,6 +644,7 @@ main {
   position: relative;
 }
 .message-container li {
+  list-style-type: "none";
   font-size: 0.7em;
   list-style: none;
   display: flex;

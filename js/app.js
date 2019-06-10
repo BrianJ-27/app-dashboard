@@ -53,7 +53,15 @@ form.addEventListener('submit', (e) => {
     $(".notify-message-box").slideDown(900);
   });
 
-  
+
+  const closeNotes  = (noteClass) => {
+    let note = document.querySelector(noteClass); 
+    let ul = document.getElementById("message-container");
+    
+    note.style.display = "none";
+  }
+
+
   
 
 

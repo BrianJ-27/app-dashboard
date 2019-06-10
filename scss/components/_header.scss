@@ -101,7 +101,8 @@
   @include flex_me($wrap:wrap);
   position: relative;
   & li{
-    font-size: .7em; 
+    list-style-type: "none";
+    font-size: .7em;  
     list-style: none;
     @include flex_me();
   }

@@ -30,13 +30,22 @@
                 </div>
             </div>
             <div class="notify-message-box">
-                <ul class="message-container">
-                  <li class="msg"><a href="">The Hourly traffic has changed.</a></li>
-                  <span class="closeNote1">&times;</span>
-                  <li class="msg"><a href="">Twitter users have gone up by 300!</a></li>
-                  <span class="closeNote2">&times;</span>
-                  <li class="msg"><a href="">Brenda wants to be added to your group.</a></li>
-                  <span class="closeNote3">&times;</span>
+                <ul id="message-container">
+                  <li class="msg1">
+                    <a href="">The Hourly traffic has changed.</a>
+                    <span class= "closeNote1" onclick="closeNotes('.msg1')">&times;</span>
+                  </li>
+                  
+                  <li class="msg2">
+                    <a href="">Twitter users have gone up by 300!</a>
+                    <span class="closeNote2" onclick="closeNotes('.msg2')">&times;</span>
+                  </li>
+                  
+                  <li class="msg3">
+                    <a href="">Brenda wants to be added to your group.</a>
+                    <span class="closeNote3" onclick="closeNotes('.msg3')">&times;</span>
+                  </li>
+                  
                 </ul>
               </div>
         </header>
