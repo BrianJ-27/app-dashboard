@@ -53,12 +53,19 @@
   top: 8%;
   @include mq('md'){
     top: 5.4%;
-    
-  } 
+    width: 40%;
+    left: 32%;
+  }
+  @include mq('lg'){
+    width: 40%;
+  }
   & li {
     border-bottom: .2px solid $font-color-secondary;
     padding: 10px 5px;
     flex-basis: 100%;
+  }
+  & a{
+    color: #000;
   }
 }
 
@@ -69,6 +76,12 @@
   color: $primary;
   position: absolute;
   left: 90.5%;
+  @include mq('md'){
+    left: 93%;
+  }
+  @include mq('lg'){
+    left: 95%;
+  }
 } 
 
 .closeNote1{

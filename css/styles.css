@@ -585,12 +585,22 @@ main {
 @media (min-width: 768px) {
   .notify-message-box {
     top: 5.4%;
+    width: 40%;
+    left: 32%;
+  }
+}
+@media (min-width: 1024px) {
+  .notify-message-box {
+    width: 40%;
   }
 }
 .notify-message-box li {
   border-bottom: 0.2px solid #8c8c8c;
   padding: 10px 5px;
   flex-basis: 100%;
+}
+.notify-message-box a {
+  color: #000;
 }
 
 .closeNote1,
@@ -600,6 +610,20 @@ main {
   color: #089af5;
   position: absolute;
   left: 90.5%;
+}
+@media (min-width: 768px) {
+  .closeNote1,
+.closeNote2,
+.closeNote3 {
+    left: 93%;
+  }
+}
+@media (min-width: 1024px) {
+  .closeNote1,
+.closeNote2,
+.closeNote3 {
+    left: 95%;
+  }
 }
 
 .closeNote1 {
