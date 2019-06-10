@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 /* width for colored buttons for 768px screen sizes */
-/* Step 1 To use this mixin, we first need to refernce the breakpoints map
- in our variables partial.
-   Step 2 We use the map-get( ) to retrieve the info from the breakpoints map
-   The first argument you place in the function is the $keyword for the map itself
-   and the second argument would be the string you want to select from the map
-   to get the value
-   ex) map-get($breakpoints, 'lg')
-   but using the map-get( ) many times is repetitive so we can use the format below by
-   first declaring a local variable that stores a value associated with a given key 
-   and a breakpoints map
- */
 .my-pic,
 .circle {
   border-radius: 50%;
@@ -408,10 +397,6 @@ h3 {
   margin-top: 1em;
 }
 
-h3 {
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-}
 @media (min-width: 768px) {
   h3 {
     text-align: left;
@@ -426,8 +411,6 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   section {
@@ -454,8 +437,6 @@ a {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas: "header" "navigation" "main";
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .grid_wrapper {
@@ -465,10 +446,6 @@ a {
   }
 }
 
-.main-grid-wrapper {
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-}
 @media (min-width: 768px) {
   .main-grid-wrapper {
     display: grid;
@@ -544,18 +521,26 @@ main {
 }
 
 .my-header {
+  background-color: #9ad6fc;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 8px 6px -6px black;
+}
+@media (min-width: 768px) {
+  .my-header {
+    padding: 5px 5px;
+  }
+}
+
+.my-profile {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: #9ad6fc;
   padding: 5px;
-  z-index: 10;
-  box-shadow: 0 8px 6px -6px black;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
-  .my-header {
+  .my-profile {
     padding: 5px 5px;
   }
 }
@@ -575,17 +560,41 @@ main {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .notification-circle {
-    right: 8.7em;
+    top: 13px;
+    right: 9em;
+  }
+}
+@media (min-width: 1024px) {
+  .notification-circle {
+    top: 14px;
   }
 }
 
 .notify-message-box {
+  padding: 10px;
+  position: fixed;
   display: none;
+  background: #fff;
+  left: 10%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .notify-message-box {
+    top: 5.4%;
+  }
+}
+
+.closeNote {
+  margin-left: auto;
+}
+
+.message-container li {
+  list-style: none;
+  display: flex;
+  font-size: 0.9em;
 }
 
 .profile-username {
@@ -610,10 +619,6 @@ main {
   font-size: 1em;
   padding: 1em;
   margin-top: 0;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .db-title {
@@ -639,8 +644,6 @@ main {
   background: #E8E8E8;
   flex-basis: 65%;
   border-radius: 3px 0 0 6px;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 1024px) {
   .search-wrapper {
@@ -675,12 +678,6 @@ main {
   cursor: pointer;
 }
 
-.daily,
-.new-members,
-.message {
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-}
 @media (min-width: 768px) {
   .daily,
 .new-members,
@@ -701,8 +698,6 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 1em;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .icon-wrapper {
@@ -723,8 +718,6 @@ main {
   align-items: center;
   height: 70px;
   width: 70px;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .social-twitter,
@@ -748,8 +741,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 1em 0;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .social-container {
@@ -772,8 +763,6 @@ main {
   padding: 1.5em 0;
   margin: 0 auto;
   width: 90%;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .members-container,
@@ -814,10 +803,6 @@ main {
   padding: 10px 0;
 }
 
-.widget-container-half {
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
-}
 @media (min-width: 768px) {
   .widget-container-half {
     width: calc((100vw - 55px - 4em) / 2);
@@ -831,8 +816,6 @@ main {
   color: #089af5;
   font-size: 1.5em;
   font-weight: 500;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .twitter-text p:first-child,
@@ -856,9 +839,7 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 35px;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
+  padding: 5px 5px 0 5px;
 }
 @media (min-width: 768px) {
   .nav-wrapper {
@@ -882,8 +863,6 @@ nav {
   height: 30px;
   width: 80%;
   align-self: center;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 1024px) {
   .search-input {
@@ -901,6 +880,10 @@ nav {
 
 form {
   padding-top: 1em;
+}
+
+.hidden-form {
+  display: none !important;
 }
 
 #userField {
@@ -934,8 +917,6 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .traffic-nav {
@@ -999,8 +980,6 @@ textarea {
   display: flex;
   justify-content: space-around;
   margin: 0.94em auto;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 768px) {
   .email-settings,
@@ -1013,8 +992,6 @@ textarea {
 .p-settings {
   padding-top: 6px;
   flex-basis: 60%;
-  /*first declaring a local variable (ex) $value) that stores a value associated 
-    with a given key and a breakpoints map*/
 }
 @media (min-width: 1024px) {
   .p-settings {

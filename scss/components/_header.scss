@@ -1,10 +1,17 @@
 //Light Blue Top Header
 .my-header{
+  background-color: $primary-light;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 8px 6px -6px black;
+  @include mq('md'){
+    padding: 5px 5px;
+  }
+}
+.my-profile{
   @include flex_me($just: flex-end, $vertAlign: center);
   background-color: $primary-light;
   padding: 5px;
-  z-index: 10;
-  box-shadow: 0 8px 6px -6px black;
   @include mq('md'){
     padding: 5px 5px;
   }
@@ -27,15 +34,39 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  
   @include mq('md'){
-    right: 8.7em;
+    top: 13px;
+    right: 9em;
+  }
+  @include mq('lg'){
+    top: 14px;
   }
 }
-
+//Hidden Notification box once user click on bell
 .notify-message-box{
+  padding: 10px;
+  position: fixed;
   display: none;
+  background: $white;
+  left: 10%;
+  @include mq('md'){
+    top: 5.4%;
+    
+  }
+  
+  width: 80%;
 }
+
+.closeNote{
+  margin-left: auto; 
+} 
+
+.message-container li{
+  list-style: none;
+  @include flex_me();
+  font-size: .9em;
+}
+
 
 .profile-username{
   display: flex;

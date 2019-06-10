@@ -5,7 +5,7 @@ nav {
 .nav-wrapper{
     @include flex_me($just: space-around);
     margin: 0;
-    padding:  35px;
+    padding: 5px 5px 0 5px;
     @include mq('md'){
         @include flex_me($dir: column, $just:center);
         padding: 20px 0;

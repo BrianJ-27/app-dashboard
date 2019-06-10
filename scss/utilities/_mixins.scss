@@ -2,7 +2,7 @@
 // MIXINS
 // **************************************
 /* width for colored buttons for 768px screen sizes */
-@mixin btn_width{
+  @mixin btn_width{
     width: 15%;
   }
   
@@ -27,23 +27,9 @@
        align-self: $horznAlign;
      }
   
-  // Media Query
-  /* Step 1 To use this mixin, we first need to refernce the breakpoints map
-   in our variables partial.
-     Step 2 We use the map-get( ) to retrieve the info from the breakpoints map
-     The first argument you place in the function is the $keyword for the map itself
-     and the second argument would be the string you want to select from the map
-     to get the value
-     ex) map-get($breakpoints, 'lg')
-     but using the map-get( ) many times is repetitive so we can use the format below by
-     first declaring a local variable that stores a value associated with a given key 
-     and a breakpoints map
-   */
+ //Create media query breakpoints
   @mixin mq($break){
-    /*first declaring a local variable (ex) $value) that stores a value associated 
-      with a given key and a breakpoints map*/
     $value: map-get($breakpoints, $break);
-    //Declare another variable that will store the 'sm' key in breakpoints map 
     $sm: map-get($breakpoints, 'sm');
   
     @if $value < $sm {
