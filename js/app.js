@@ -48,10 +48,9 @@ form.addEventListener('submit', (e) => {
     resetForm();
 });
 
-//Notification Message Box
-//
+//Notification Message Box using Jquery
   $(".bell-alert").click(function() {
-    $(".notify-message-box").slideDown(1000);
+    $(".notify-message-box").slideDown(900);
   });
 
   

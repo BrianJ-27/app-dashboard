@@ -44,29 +44,55 @@
 }
 //Hidden Notification box once user click on bell
 .notify-message-box{
-  padding: 10px;
   position: fixed;
   display: none;
   background: $white;
-  left: 10%;
+  border: 1px outset $primary;
+  width: 65%;
+  left: 18%;
+  top: 8%;
   @include mq('md'){
     top: 5.4%;
     
+  } 
+  & li {
+    border-bottom: .2px solid $font-color-secondary;
+    padding: 10px 5px;
+    flex-basis: 100%;
   }
-  
-  width: 80%;
 }
 
-.closeNote{
+.closeNote1,
+.closeNote2,
+.closeNote3 {
   margin-left: auto; 
+  color: $primary;
+  position: absolute;
+  left: 90.5%;
 } 
 
-.message-container li{
-  list-style: none;
-  @include flex_me();
-  font-size: .9em;
+.closeNote1{
+  top: -3%;
 }
 
+.closeNote2{
+  top: 29%;
+}
+
+.closeNote3{
+  top: 61%;
+}
+
+
+.message-container{
+  @include flex_me($wrap:wrap);
+  position: relative;
+  & li{
+    font-size: .7em; 
+    list-style: none;
+    @include flex_me();
+  }
+} 
 
 .profile-username{
   display: flex;

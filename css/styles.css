@@ -574,27 +574,55 @@ main {
 }
 
 .notify-message-box {
-  padding: 10px;
   position: fixed;
   display: none;
   background: #fff;
-  left: 10%;
-  width: 80%;
+  border: 1px outset #089af5;
+  width: 65%;
+  left: 18%;
+  top: 8%;
 }
 @media (min-width: 768px) {
   .notify-message-box {
     top: 5.4%;
   }
 }
-
-.closeNote {
-  margin-left: auto;
+.notify-message-box li {
+  border-bottom: 0.2px solid #8c8c8c;
+  padding: 10px 5px;
+  flex-basis: 100%;
 }
 
+.closeNote1,
+.closeNote2,
+.closeNote3 {
+  margin-left: auto;
+  color: #089af5;
+  position: absolute;
+  left: 90.5%;
+}
+
+.closeNote1 {
+  top: -3%;
+}
+
+.closeNote2 {
+  top: 29%;
+}
+
+.closeNote3 {
+  top: 61%;
+}
+
+.message-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 .message-container li {
+  font-size: 0.7em;
   list-style: none;
   display: flex;
-  font-size: 0.9em;
 }
 
 .profile-username {
