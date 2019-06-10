@@ -54,13 +54,10 @@ form.addEventListener('submit', (e) => {
   });
 
 
-  const closeNotes  = (noteClass) => {
+  const closeNotes  = (noteClass, arr) => {
     let note = document.querySelector(noteClass); 
-    let ul = document.getElementById("message-container");
-    
-    note.style.display = "none";
+    let list = document.querySelectorAll('.msg');
   }
-
 
   
 

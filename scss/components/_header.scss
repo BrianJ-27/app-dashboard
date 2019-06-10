@@ -60,9 +60,11 @@
     width: 40%;
   }
   & li {
+    list-style-type:none ;
     border-bottom: .2px solid $font-color-secondary;
     padding: 10px 5px;
     flex-basis: 100%;
+    font-size: .9em; 
   }
   & a{
     color: #000;
@@ -96,17 +98,6 @@
   top: 61%;
 }
 
-
-.message-container{
-  @include flex_me($wrap:wrap);
-  position: relative;
-  & li{
-    list-style-type: "none";
-    font-size: .7em;  
-    list-style: none;
-    @include flex_me();
-  }
-} 
 
 .profile-username{
   display: flex;

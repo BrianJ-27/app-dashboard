@@ -595,9 +595,11 @@ main {
   }
 }
 .notify-message-box li {
+  list-style-type: none;
   border-bottom: 0.2px solid #8c8c8c;
   padding: 10px 5px;
   flex-basis: 100%;
+  font-size: 0.9em;
 }
 .notify-message-box a {
   color: #000;
@@ -636,18 +638,6 @@ main {
 
 .closeNote3 {
   top: 61%;
-}
-
-.message-container {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-.message-container li {
-  list-style-type: "none";
-  font-size: 0.7em;
-  list-style: none;
-  display: flex;
 }
 
 .profile-username {
