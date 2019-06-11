@@ -53,8 +53,8 @@ form.addEventListener('submit', (e) => {
     $(".notify-message-box").slideDown(900);
   });
 
-
-  const closeNotes = (noteId) => {
+//When user clicks this function, it will remove the li elements (alert notifications) from the screen
+  const closeNotes = (noteId) => { 
     let note = document.getElementById(noteId); 
     note.style.display = "none";
   }

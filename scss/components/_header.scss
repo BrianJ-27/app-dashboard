@@ -72,9 +72,7 @@
   }
 }
 
-.closeNote1,
-.closeNote2,
-.closeNote3 {
+#hideMe > span {
   cursor: pointer;
   margin-left: auto; 
   color: $primary;
