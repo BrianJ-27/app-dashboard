@@ -48,15 +48,15 @@ form.addEventListener('submit', (e) => {
     resetForm();
 });
 
-//Notification Message Box using Jquery
+//Dispays notification message box using Jquery
   $(".bell-alert").click(function() {
     $(".notify-message-box").slideDown(900);
   });
 
 
-  const closeNotes  = (noteClass, arr) => {
-    let note = document.querySelector(noteClass); 
-    let list = document.querySelectorAll('.msg');
+  const closeNotes = (noteId) => {
+    let note = document.getElementById(noteId); 
+    note.style.display = "none";
   }
 
   

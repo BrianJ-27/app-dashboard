@@ -595,9 +595,12 @@ main {
   }
 }
 .notify-message-box li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
   border-bottom: 0.2px solid #8c8c8c;
-  padding: 10px 5px;
+  padding: 10px 6px;
   flex-basis: 100%;
   font-size: 0.9em;
 }
@@ -608,36 +611,9 @@ main {
 .closeNote1,
 .closeNote2,
 .closeNote3 {
+  cursor: pointer;
   margin-left: auto;
   color: #089af5;
-  position: absolute;
-  left: 90.5%;
-}
-@media (min-width: 768px) {
-  .closeNote1,
-.closeNote2,
-.closeNote3 {
-    left: 93%;
-  }
-}
-@media (min-width: 1024px) {
-  .closeNote1,
-.closeNote2,
-.closeNote3 {
-    left: 95%;
-  }
-}
-
-.closeNote1 {
-  top: -3%;
-}
-
-.closeNote2 {
-  top: 29%;
-}
-
-.closeNote3 {
-  top: 61%;
 }
 
 .profile-username {

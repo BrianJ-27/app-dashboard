@@ -60,9 +60,10 @@
     width: 40%;
   }
   & li {
+    @include flex_me($wrap:wrap, $just:space-between);
     list-style-type:none ;
     border-bottom: .2px solid $font-color-secondary;
-    padding: 10px 5px;
+    padding: 10px 6px;
     flex-basis: 100%;
     font-size: .9em; 
   }
@@ -74,30 +75,10 @@
 .closeNote1,
 .closeNote2,
 .closeNote3 {
+  cursor: pointer;
   margin-left: auto; 
   color: $primary;
-  position: absolute;
-  left: 90.5%;
-  @include mq('md'){
-    left: 93%;
-  }
-  @include mq('lg'){
-    left: 95%;
-  }
 } 
-
-.closeNote1{
-  top: -3%;
-}
-
-.closeNote2{
-  top: 29%;
-}
-
-.closeNote3{
-  top: 61%;
-}
-
 
 .profile-username{
   display: flex;

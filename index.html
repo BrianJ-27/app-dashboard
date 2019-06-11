@@ -31,19 +31,19 @@
             </div>
             <div class="notify-message-box">
                 <ul id="message-container">
-                  <li class="msg">
+                  <li id="hideMe">
                     <a href="">The Hourly traffic has changed.</a>
-                    <span class= "closeNote1" onclick="closeNotes('.msg')">&times;</span>
+                    <span class= "closeNote1" onclick="closeNotes('hideMe')">&times;</span>
                   </li>
                   
-                  <li class="msg">
+                  <li id="hideMe">
                     <a href="">Twitter users have gone up by 300!</a>
-                    <span class="closeNote2" onclick="closeNotes('.msg')">&times;</span>
+                    <span class="closeNote2" onclick="closeNotes('hideMe')">&times;</span>
                   </li>
                   
-                  <li class="msg">
+                  <li id="hideMe">
                     <a href="">Brenda wants to be added to your group.</a>
-                    <span class="closeNote3" onclick="closeNotes('.msg')">&times;</span>
+                    <span class="closeNote3" onclick="closeNotes('hideMe')">&times;</span>
                   </li>
                   
                 </ul>
@@ -158,10 +158,10 @@
             <section class="traffic">
                   <h3>Traffic</h3> 
                   <ul class="traffic-nav">
-                    <li class="traffic-nav-link">Hourly</li>
-                    <li class="traffic-nav-link">Daily</li>
-                    <li class="traffic-nav-link active">Weekly</li>
-                    <li class="traffic-nav-link">Monthly</li>
+                    <li class="traffic-nav-link" onclick="hourData()" id="hourly">Hourly</li>
+                    <li class="traffic-nav-link" onclick="dailyData()" id="daily">Daily</li>
+                    <li class="traffic-nav-link active" onclick="weeklyData()" id="weekly">Weekly</li>
+                    <li class="traffic-nav-link" onclick="monthlyData()" id="monthly">Monthly</li>
                   </ul>
                   <div class="widget-container-full">
                   <!-- element line graph will attach to -->
