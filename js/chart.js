@@ -1,7 +1,7 @@
 const ctx = document.getElementById('traffic-chart').getContext('2d');
 Chart.defaults.global.legend.display = false
 
-const hourlyChart = new Chart(ctx, {
+const defaultChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['12pm','1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm'],
@@ -41,9 +41,9 @@ const hourlyChart = new Chart(ctx, {
 });
 
 const hourData = () => {
-    hourlyChart.data.labels.push();
-    hourlyChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
-    hourlyChart.update();
+    defaultChart.data.labels.push();
+    defaultChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
+    defaultChart.update();
 }
 const dailyData = () => {
     hourlyChart.data.labels.push('Mon');
