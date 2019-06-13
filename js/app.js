@@ -59,6 +59,16 @@ form.addEventListener('submit', (e) => {
     note.style.display = "none";
   }
 
+//Once user clicks any of the alerts in the message container the green notify dot disappears
+  const notesClose = document.getElementById("message-container");
+  const greenCircle = document.querySelector(".notification-circle");
+  
+  notesClose.addEventListener("click", () =>{
+      greenCircle.style.display ="none";
+  })
+  
+
+
   
 
 
