@@ -1,10 +1,12 @@
-const ctx = document.getElementById('traffic-chart').getContext('2d');
 Chart.defaults.global.legend.display = false
+//grabbing the canvas element with an id of "traffic-chart"
+const ctx = document.getElementById('traffic-chart').getContext('2d');
 
+//default chart that displays when page loads
 const defaultChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['12pm','1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm'],
+        labels: ['8am','9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm'],
         datasets: [{
             backgroundColor: 'rgba(8, 154, 245, 0.6)',
             lineTension: 0.1,
@@ -40,25 +42,27 @@ const defaultChart = new Chart(ctx, {
     }
 });
 
+
+
 const hourData = () => {
-    defaultChart.data.labels.push();
-    defaultChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
+    defaultChart.data.datasets[0].data = [1000, 500, 890, 350, 700, 775, 900, 625, 533, 880];
+    defaultChart.data.labels = ['5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12am', '1am'];
     defaultChart.update();
 }
 const dailyData = () => {
-    hourlyChart.data.labels.push('Mon');
-    hourlyChart.data.datasets[0].data = [700, 400, 850, 550, 975, 100, 70, 350, 950, 500];
-    hourlyChart.update();
+    defaultChart.data.datasets[0].data = [700, 400, 850, 550, 975, 100, 500];
+    defaultChart.data.labels = ['Sun','Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    defaultChart.update();
 }
 const weeklyData = () => {
-    hourlyChart.data.labels.push('16-22', '23-29', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31');
-    hourlyChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
-    hourlyChart.update();
+    defaultChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
+    defaultChart.data.labels = ['16-22', '23-29', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'];
+    defaultChart.update();
 }
 const monthlyData = () => {
-    hourlyChart.data.labels.push(label);
-    hourlyChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 100, 70, 350, 950, 500];
-    hourlyChart.update();
+    defaultChart.data.datasets[0].data = [550, 700, 450, 850, 375, 200, 600, 350, 750, 500];
+    defaultChart.data.labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct'];
+    defaultChart.update();
 }
 
 
