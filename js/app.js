@@ -67,9 +67,9 @@ form.addEventListener('submit', (e) => {
       greenCircle.style.display ="none";
   })
   
+const userField = document.getElementById("userField");
 
 
-  
 
 
  
