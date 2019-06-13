@@ -409,18 +409,18 @@
                   <div class="email-settings">
                         <p class="p-settings">Send Email Notifications</p>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input id="localSaveEmail" type="checkbox" checked>
                             <span class="slider round">on</span>
                         </label>
                   </div>
                   <div class="profile-settings">
                         <p class="p-settings">Send Profile to Public</p>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input id="localSaveProfile" type="checkbox" checked>
                             <span class="slider round">on</span>
                         </label>
                   </div>
-                  <select class="form-field timezone" id="timezone">
+                  <select id=localSaveTz class="form-field timezone" id="timezone">
                         <option disabled selected>Select a Timezone</option>
                         <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
                         <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
@@ -506,8 +506,8 @@
                         <option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
                   </select>
                   <div class="settings-button" >
-                        <button class="button-save" id="save">Save</button>
-                        <button class="button-disabled" id="cancel">Cancel</button>
+                        <button class="button-save" id="setLocalSettings">Save</button>
+                        <button class="button-disabled" id="clearLocalSettings">Cancel</button>
                   </div>  
                 </form>  
             </section>

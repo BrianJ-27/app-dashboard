@@ -69,6 +69,61 @@ form.addEventListener('submit', (e) => {
   
 const userField = document.getElementById("userField");
 
+//LOCAL STORAGE code
+
+//setting up shell functions that will be called in the event listeners below
+
+//function that be called when we try to check if any browser supports local storage
+const supportsLocalStorage = () => {
+  try {
+  return 'localStorage' in window && window['localStorage'] !== null;
+  }
+  catch(e){
+    return false;
+  }
+}
+
+//function that's called when we retrieve local settings from
+const getLocalSettings = () =>{
+  let savedSettingData = localStorage.getItem("recentData");
+  if(savedSettingData){
+    return JSON.parse(savedSettingData);
+  } else{
+    return [];
+  }
+}
+
+// function that is called in when user clicks the save button & it saves settings
+const saveSettings = (str) => {
+  getLocalSettings();
+  if(!str || savedSettingData.indexOf(str) > -1){
+    return false;
+  }
+  savedSettingData.push(str);
+  localStorage.setItem(savedSettingData, JSON.stringify(savedSettingData));
+  return true;
+}
+
+// function that is called in when user clicks the cancel button & it removes saved settings
+const clearSettings = () => {
+  localStorage.removeItem('savedSettingData');
+}
+
+window.onload =() =>{
+//check to see if we can use local storage once page loads
+  if(supportsLocalStorage()){
+  const saveButton = document.getElementById("setLocalSettings");
+  const cancelButton = document.getElementById("clearLocalSettings");
+
+    saveButton.addEventListener("click", ()=> {
+      saveSettings();
+    });
+
+    cancelButton.addEventListener("click", ()=> {
+      clearSettings();
+    });
+  }
+}
 
 
 
