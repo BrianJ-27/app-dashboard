@@ -111,18 +111,19 @@ const saveProfileSettings = () => {
   }
 }
 
-const getSetingsStorage =() => {
-  let emailSave = document.getElementById("localSaveEmail").checked;
-  let profileSave = document.getElementById("localSaveProfile").checked;
-  if (emailSave == true && profileSave == true){
-    localStorage.getItem("emailSave");
-    localStorage.getItem("profileSave");
-  }
-}
-
 const timeZoneSetting = () =>{
+  let timeZoneSave = document.getElementById("localSaveTz").selectedIndex;
 
 }
+
+const getSetingsStorage =() => {
+  document.getElementById("localSaveEmail").checked = getEmailSetting;
+  document.getElementById("localSaveProfile").checked = getProfileSetting;
+  const getEmailSetting = JSON.parse(localStorage.getItem('emailSave'));
+  const getProfileSetting = JSON.parse(localStorage.getItem('profileSave'));
+}
+
+
 
 // function that is called in when user clicks the cancel button & it removes saved settings
 const clearSettings = () => {
