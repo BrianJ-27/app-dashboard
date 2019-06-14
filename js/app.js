@@ -69,11 +69,11 @@ form.addEventListener('submit', (e) => {
   
 const userField = document.getElementById("userField");
 
-//LOCAL STORAGE code
+//LOCAL STORAGE
 
 //setting up shell functions that will be called in the event listeners below
 
-//function that be called when we try to check if any browser supports local storage
+//function that checks if any browser supports local storage
 const supportsLocalStorage = () => {
   try {
   return 'localStorage' in window && window['localStorage'] !== null;
@@ -83,30 +83,32 @@ const supportsLocalStorage = () => {
   }
 }
 
-//function that's called when we retrieve local settings from
-const getLocalSettings = () =>{
-  let savedSettingData = localStorage.getItem("recentData");
-  if(savedSettingData){
-    return JSON.parse(savedSettingData);
-  } else{
-    return [];
+// function that first grabs the on/off toggle input for email setting and checks if user turns it on or off
+// this function will be called inside the saveButton event listener
+const saveEmailSettings = () => {
+  let emailSave = document.getElementById("localSaveEmail");
+  if(emailSave.checked){
+    localStorage.setItem("emailSave", "true");
+  } else if (!emailSave.checked) {
+    localStorage.setItem("emailSave", "false");
   }
 }
 
-// function that is called in when user clicks the save button & it saves settings
-const saveSettings = (str) => {
-  getLocalSettings();
-  if(!str || savedSettingData.indexOf(str) > -1){
-    return false;
+// function that first grabs the on/off toggle input for the profile setting and checks if user turns it on or off
+// this function will be called inside the saveButton event listener
+const saveProfileSettings = () => {
+  let profileSave = document.getElementById("localSaveProfile");
+  if(profileSave.checked){
+    localStorage.setItem("profileSave", "true");
+  } else if (!emailSave.checked) {
+    localStorage.setItem("profileSave", "false");
   }
-  savedSettingData.push(str);
-  localStorage.setItem(savedSettingData, JSON.stringify(savedSettingData));
-  return true;
 }
 
 // function that is called in when user clicks the cancel button & it removes saved settings
 const clearSettings = () => {
-  localStorage.removeItem('savedSettingData');
+  localStorage.removeItem("emailSave");
+  localStorage.removeItem("profileSave");
 }
 
 window.onload =() =>{
@@ -116,7 +118,8 @@ window.onload =() =>{
   const cancelButton = document.getElementById("clearLocalSettings");
 
     saveButton.addEventListener("click", ()=> {
-      saveSettings();
+      saveEmailSettings();
+      saveProfileSettings();
     });
 
     cancelButton.addEventListener("click", ()=> {
