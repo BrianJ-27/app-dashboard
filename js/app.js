@@ -67,8 +67,6 @@ form.addEventListener('submit', (e) => {
       greenCircle.style.display ="none";
   })
   
-const userField = document.getElementById("userField");
-
 //LOCAL STORAGE
 
 //setting up shell functions that will be called in the event listeners below
@@ -89,8 +87,10 @@ const saveEmailSettings = () => {
   let emailSave = document.getElementById("localSaveEmail");
   if(emailSave.checked){
     localStorage.setItem("emailSave", "true");
+    return true;
   } else if (!emailSave.checked) {
     localStorage.setItem("emailSave", "false");
+    return false;
   }
 }
 
@@ -100,9 +100,15 @@ const saveProfileSettings = () => {
   let profileSave = document.getElementById("localSaveProfile");
   if(profileSave.checked){
     localStorage.setItem("profileSave", "true");
-  } else if (!emailSave.checked) {
+    return true;
+  } else if (!profileSave.checked) {
     localStorage.setItem("profileSave", "false");
+    return false;
   }
+}
+
+const timeZoneSetting = () =>{
+
 }
 
 // function that is called in when user clicks the cancel button & it removes saved settings
