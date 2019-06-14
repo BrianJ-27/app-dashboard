@@ -112,15 +112,17 @@ const saveProfileSettings = () => {
 }
 
 const timeZoneSetting = () =>{
-  let timeZoneSave = document.getElementById("localSaveTz").selectedIndex;
-
+  let timeZoneSave = document.getElementById("localSaveTz");
+   localStorage.setItem('timeZoneSave', timeZoneSave.selectedIndex);
 }
 
 const getSetingsStorage =() => {
-  document.getElementById("localSaveEmail").checked = getEmailSetting;
-  document.getElementById("localSaveProfile").checked = getProfileSetting;
   const getEmailSetting = JSON.parse(localStorage.getItem('emailSave'));
   const getProfileSetting = JSON.parse(localStorage.getItem('profileSave'));
+  const getTimeZoneSetting = JSON.parse(localStorage.getItem('timeZoneSave'));
+  document.getElementById("localSaveEmail").checked = getEmailSetting;
+  document.getElementById("localSaveProfile").checked = getProfileSetting;
+  document.getElementById("localSaveTz").selectedIndex = getTimeZoneSetting;
 }
 
 
@@ -136,16 +138,18 @@ window.onload =() =>{
   if(supportsLocalStorage()){
   const saveButton = document.getElementById("setLocalSettings");
   const cancelButton = document.getElementById("clearLocalSettings");
+  getSetingsStorage();
 
     saveButton.addEventListener("click", ()=> {
       saveEmailSettings();
       saveProfileSettings();
+      timeZoneSetting();
     });
 
     cancelButton.addEventListener("click", ()=> {
       clearSettings();
     });
-    getSetingsStorage();
+    
   }
   
 }
