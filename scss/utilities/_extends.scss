@@ -4,6 +4,13 @@
     margin: 0 auto;
   }
 
+ %trafficLinkStates {
+   &:hover,
+   &:active{
+    background: green;
+   }
+ }
+
   //rounded Images
   %roundyImg {
     border-radius: 50%;
