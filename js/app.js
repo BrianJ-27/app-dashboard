@@ -1,3 +1,7 @@
+// const getEmailSetting = JSON.parse(localStorage.getItem('emailSave'));
+// const getProfileSetting = JSON.parse(localStorage.getItem('profileSave'));
+// document.getElementById("localSaveEmail").checked = getEmailSetting;
+// document.getElementById("localSaveProfile").checked = getProfileSetting;
 
 // Alert Box 
 const xAlert = document.querySelector(".xbox");
@@ -135,13 +139,14 @@ window.onload =() =>{
     saveButton.addEventListener("click", ()=> {
       saveEmailSettings();
       saveProfileSettings();
-      getSetingsStorage();
     });
 
     cancelButton.addEventListener("click", ()=> {
       clearSettings();
     });
+    getSetingsStorage();
   }
+  
 }
 
 
