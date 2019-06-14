@@ -41,7 +41,7 @@ const validate = () => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validate();  
-
+//Once the form is successfully sent, the form field will return again
     setTimeout(function () {
       let errorMessage = document.getElementById("errorMsg"); 
       let input = form.querySelector("#userField").value = "";
