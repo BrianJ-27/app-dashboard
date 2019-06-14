@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
         <title>Brian&apos;s Dashboard</title>
     </head>
     <body class="grid_wrapper">
-    <!------------------------------------------HEADER CONTENT------------------------------------------------->
+    <!--HEADER CONTENT-->
         <header class="my-header">
             <div class="my-profile">
                 <h1><span>M</span>y<span>W</span>eb<span>D</span>ash</h1>
@@ -50,9 +50,10 @@
                 </ul>
               </div>
         </header>
-    <!------------------------------------------NAVIGATIONAL CONTENT---------------------------------------------------->
+    <!--NAVIGATIONAL CONTENT-->
         <nav class="navigation">
           <div class="nav-wrapper">
+           <ul>
             <li>
               <a class="dashboard_icon" href="index.html">
                 <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -128,9 +129,10 @@
                 </svg>
               </a>
             </li>
+          </ul>
           </div>
         </nav>   
-        <!---------------------------------------------MAIN CONTENT--------------------------------------------------------->
+        <!--MAIN CONTENT-->
         <main>
             <div class="main-header">
                 <h2 class="db-title">Dashboard</h2>
@@ -153,7 +155,7 @@
                 <p><strong>Alert</strong>Please change your password before it expires</p>
                 <span class="xbox">&times;</span>
             </div>
-    <!----------------------LINE GRAPH SECTION-------------------------------->
+    <!--LINE GRAPH SECTION-->
           <div class="main-grid-wrapper">
               
             <section class="traffic">
@@ -169,7 +171,7 @@
                     <canvas id="traffic-chart"></canvas>
                   </div>
             </section>
-    <!----------------------BAR GRAPH SECTION-------------------------------->
+    <!--BAR GRAPH SECTION-->
             <section class="daily">
                   <h3>Daily Traffic</h3>
                   <div class="widget-container-half">
@@ -178,7 +180,7 @@
                         <canvas id="daily-chart"></canvas>
                   </div>
             </section>
-  <!----------------------PIE/CIRCLE GRAPH SECTION-------------------------------->
+  <!--PIE/CIRCLE GRAPH SECTION-->
             <section class="mobile">
                  <h3>Mobile Users </h3>
                  <div class="widget-container-half">
@@ -186,7 +188,7 @@
                         <canvas id="doughnut-chart"></canvas>
                   </div>
                </section>
-   <!----------------------SOCIAL MEDIA ICON DATA-------------------------------->       
+   <!--SOCIAL MEDIA ICON DATA-->       
             <section class="social" id="social">
                 <h3>Social Stats</h3>
                 <div class="social-container">
@@ -237,11 +239,11 @@
                </div>
               </div> 
           </section>
-    <!----------------------NEW MEMBER SECTION-------------------------------->
+    <!--NEW MEMBER SECTION-->
             <section class="new-members" id="members">
                 <h3>New Members</h3>
                 <div class="members-container">
-                  <img src="images/member-1.jpg"class="profile-image circle" alt="member image pic 1">
+                  <img src="images/member-1.jpg" class="profile-image circle" alt="member image pic 1">
                   <div class="members-text">
                     <p>Victoria Chambers</p>
                     <a href="#">victoria.chambers80@example.com</a>
@@ -249,7 +251,7 @@
                   <p>10/15/15</p>
                 </div>
                 <div class="members-container">
-                    <img src="images/member-2.jpg"class="profile-image circle" alt="member image pic 2">
+                    <img src="images/member-2.jpg" class="profile-image circle" alt="member image pic 2">
                     <div class="members-text">
                       <p>Dale Byrd</p>
                       <a href="#">dale.byrd52@example.com</a>
@@ -257,7 +259,7 @@
                     <p>10/15/16</p>
                  </div>
                  <div class="members-container">
-                     <img src="images/member-3.jpg"class="profile-image circle" alt="member image pic 3">
+                     <img src="images/member-3.jpg" class="profile-image circle" alt="member image pic 3">
                      <div class="members-text">
                        <p>Dawn Wood</p>
                        <a href="#">dawn.wood16@example.com</a>
@@ -265,7 +267,7 @@
                      <p>10/15/17</p>
                  </div>
                  <div class="last-member-container">
-                     <img src="images/member-4.jpg"class="profile-image circle" alt="member image pic 4">
+                     <img src="images/member-4.jpg" class="profile-image circle" alt="member image pic 4">
                      <div class="members-text">
                        <p>Dan Oliver</p>
                        <a href="#">dan.oliver82@example.com</a>
@@ -273,11 +275,11 @@
                      <p>10/15/16</p>
                  </div>
             </section>
-<!----------------------RECENT ACTIVITY SECTION-------------------------------->
+<!--RECENT ACTIVITY SECTION-->
             <section class="recent-activity">
                 <h3>Recent Activity</h3>
                 <div class="members-container">
-                  <img src="images/member-1.jpg"class="profile-image circle" alt="member image pic 5"> 
+                  <img src="images/member-1.jpg" class="profile-image circle" alt="member image pic 5"> 
                   <div class="members-text">
                     <p>Victoria Chambers</p>
                     <a href="#">2 hours ago</a>
@@ -285,7 +287,7 @@
                    <p class="arrow">&gt;</p>
                 </div>
                 <div class="members-container">
-                  <img src="images/member-2.jpg"class="profile-image circle" alt="member image pic 6">
+                  <img src="images/member-2.jpg" class="profile-image circle" alt="member image pic 6">
                   <div class="members-text">
                       <p>Dale Byrd</p>
                       <a href="#">15 mins ago</a>
@@ -293,7 +295,7 @@
                     <p class="arrow">&gt;</p>
                  </div>
                  <div class="members-container">
-                     <img src="images/member-3.jpg"class="profile-image circle" alt="member image pic 7">
+                     <img src="images/member-3.jpg" class="profile-image circle" alt="member image pic 7">
                      <div class="members-text">
                        <p>Dawn Wood</p>
                        <a href="#">10 hours ago</a>
@@ -301,7 +303,7 @@
                      <p class="arrow">&gt;</p>
                  </div>
                  <div class="last-member-container">
-                     <img src="images/member-4.jpg"class="profile-image circle" alt="member image pic 8">
+                     <img src="images/member-4.jpg" class="profile-image circle" alt="member image pic 8">
                      <div class="members-text">
                        <p>Dan Oliver</p>
                        <a href="#">2 mins ago</a>
@@ -309,7 +311,7 @@
                      <p class="arrow">&gt;</p>
                  </div>
             </section>
-  <!----------------------MESSAGE USER SECTION-------------------------------->         
+  <!--MESSAGE USER SECTION-->         
             <section class="message">
                 <h3>Message User</h3>
                 <div id="errorMsg"></div>
@@ -402,7 +404,7 @@
                     <button type="submit" class="button-primary" id="send" >Send</button>
                 </form>
             </section>
-  <!----------------------SETTINGS SECTION----------------------------------->        
+  <!--SETTINGS SECTION-->        
             <section class="settings" id="settings">
                 <h3>Settings</h3>
                 <form>
@@ -420,90 +422,48 @@
                             <span class="slider round">on</span>
                         </label>
                   </div>
-                  <select id="localSaveTz" class="form-field timezone" id="timezone">
+                  <select id="localSaveTz" class="form-field" name="user_timezones">
                         <option disabled selected>Select a Timezone</option>
-                        <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
-                        <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island, Samoa</option>
-                        <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
-                        <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
-                        <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-                        <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja California</option>
-                        <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
-                        <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-                        <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
-                        <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America</option>
-                        <option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US & Canada)</option>
-                        <option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
-                        <option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan</option>
-                        <option timeZoneId="14" gmtAdjustment="GMT-05:00" useDaylightTime="0" value="-5">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
-                        <option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US & Canada)</option>
-                        <option timeZoneId="16" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Indiana (East)</option>
-                        <option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time (Canada)</option>
-                        <option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz</option>
-                        <option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
-                        <option timeZoneId="20" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Santiago</option>
-                        <option timeZoneId="21" gmtAdjustment="GMT-03:30" useDaylightTime="1" value="-3.5">(GMT-03:30) Newfoundland</option>
-                        <option timeZoneId="22" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Brasilia</option>
-                        <option timeZoneId="23" gmtAdjustment="GMT-03:00" useDaylightTime="0" value="-3">(GMT-03:00) Buenos Aires, Georgetown</option>
-                        <option timeZoneId="24" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Greenland</option>
-                        <option timeZoneId="25" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Montevideo</option>
-                        <option timeZoneId="26" gmtAdjustment="GMT-02:00" useDaylightTime="1" value="-2">(GMT-02:00) Mid-Atlantic</option>
-                        <option timeZoneId="27" gmtAdjustment="GMT-01:00" useDaylightTime="0" value="-1">(GMT-01:00) Cape Verde Is.</option>
-                        <option timeZoneId="28" gmtAdjustment="GMT-01:00" useDaylightTime="1" value="-1">(GMT-01:00) Azores</option>
-                        <option timeZoneId="29" gmtAdjustment="GMT+00:00" useDaylightTime="0" value="0">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
-                        <option timeZoneId="30" gmtAdjustment="GMT+00:00" useDaylightTime="1" value="0">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
-                        <option timeZoneId="31" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
-                        <option timeZoneId="32" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
-                        <option timeZoneId="33" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
-                        <option timeZoneId="34" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
-                        <option timeZoneId="35" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) West Central Africa</option>
-                        <option timeZoneId="36" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Amman</option>
-                        <option timeZoneId="37" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Athens, Bucharest, Istanbul</option>
-                        <option timeZoneId="38" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Beirut</option>
-                        <option timeZoneId="39" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Cairo</option>
-                        <option timeZoneId="40" gmtAdjustment="GMT+02:00" useDaylightTime="0" value="2">(GMT+02:00) Harare, Pretoria</option>
-                        <option timeZoneId="41" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
-                        <option timeZoneId="42" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Jerusalem</option>
-                        <option timeZoneId="43" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Minsk</option>
-                        <option timeZoneId="44" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Windhoek</option>
-                        <option timeZoneId="45" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
-                        <option timeZoneId="46" gmtAdjustment="GMT+03:00" useDaylightTime="1" value="3">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
-                        <option timeZoneId="47" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Nairobi</option>
-                        <option timeZoneId="48" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Tbilisi</option>
-                        <option timeZoneId="49" gmtAdjustment="GMT+03:30" useDaylightTime="1" value="3.5">(GMT+03:30) Tehran</option>
-                        <option timeZoneId="50" gmtAdjustment="GMT+04:00" useDaylightTime="0" value="4">(GMT+04:00) Abu Dhabi, Muscat</option>
-                        <option timeZoneId="51" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Baku</option>
-                        <option timeZoneId="52" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Yerevan</option>
-                        <option timeZoneId="53" gmtAdjustment="GMT+04:30" useDaylightTime="0" value="4.5">(GMT+04:30) Kabul</option>
-                        <option timeZoneId="54" gmtAdjustment="GMT+05:00" useDaylightTime="1" value="5">(GMT+05:00) Yekaterinburg</option>
-                        <option timeZoneId="55" gmtAdjustment="GMT+05:00" useDaylightTime="0" value="5">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
-                        <option timeZoneId="56" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Sri Jayawardenapura</option>
-                        <option timeZoneId="57" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
-                        <option timeZoneId="58" gmtAdjustment="GMT+05:45" useDaylightTime="0" value="5.75">(GMT+05:45) Kathmandu</option>
-                        <option timeZoneId="59" gmtAdjustment="GMT+06:00" useDaylightTime="1" value="6">(GMT+06:00) Almaty, Novosibirsk</option>
-                        <option timeZoneId="60" gmtAdjustment="GMT+06:00" useDaylightTime="0" value="6">(GMT+06:00) Astana, Dhaka</option>
-                        <option timeZoneId="61" gmtAdjustment="GMT+06:30" useDaylightTime="0" value="6.5">(GMT+06:30) Yangon (Rangoon)</option>
-                        <option timeZoneId="62" gmtAdjustment="GMT+07:00" useDaylightTime="0" value="7">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
-                        <option timeZoneId="63" gmtAdjustment="GMT+07:00" useDaylightTime="1" value="7">(GMT+07:00) Krasnoyarsk</option>
-                        <option timeZoneId="64" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
-                        <option timeZoneId="65" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Kuala Lumpur, Singapore</option>
-                        <option timeZoneId="66" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
-                        <option timeZoneId="67" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Perth</option>
-                        <option timeZoneId="68" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Taipei</option>
-                        <option timeZoneId="69" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
-                        <option timeZoneId="70" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Seoul</option>
-                        <option timeZoneId="71" gmtAdjustment="GMT+09:00" useDaylightTime="1" value="9">(GMT+09:00) Yakutsk</option>
-                        <option timeZoneId="72" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Adelaide</option>
-                        <option timeZoneId="73" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Darwin</option>
-                        <option timeZoneId="74" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Brisbane</option>
-                        <option timeZoneId="75" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Canberra, Melbourne, Sydney</option>
-                        <option timeZoneId="76" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Hobart</option>
-                        <option timeZoneId="77" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Guam, Port Moresby</option>
-                        <option timeZoneId="78" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Vladivostok</option>
-                        <option timeZoneId="79" gmtAdjustment="GMT+11:00" useDaylightTime="1" value="11">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
-                        <option timeZoneId="80" gmtAdjustment="GMT+12:00" useDaylightTime="1" value="12">(GMT+12:00) Auckland, Wellington</option>
-                        <option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
-                        <option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa</option>
+                        <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                        <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                        <option value="-10:00">(GMT -10:00) Hawaii</option>
+                        <option value="-09:50">(GMT -9:30) Taiohae</option>
+                        <option value="-09:00">(GMT -9:00) Alaska</option>
+                        <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                        <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                        <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                        <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                        <option value="-04:50">(GMT -4:30) Caracas</option>
+                        <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                        <option value="-03:50">(GMT -3:30) Newfoundland</option>
+                        <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                        <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                        <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                        <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                        <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                        <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                        <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                        <option value="+03:50">(GMT +3:30) Tehran</option>
+                        <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                        <option value="+04:50">(GMT +4:30) Kabul</option>
+                        <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                        <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                        <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                        <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                        <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                        <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                        <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                        <option value="+08:75">(GMT +8:45) Eucla</option>
+                        <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                        <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                        <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                        <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                        <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                        <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                        <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                        <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                        <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                        <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
                   </select>
                   <div class="settings-button" >
                         <button class="button-save" id="setLocalSettings">Save</button>
