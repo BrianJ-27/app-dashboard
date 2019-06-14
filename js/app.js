@@ -9,7 +9,7 @@ const xAlert = document.querySelector(".xbox");
 xAlert.addEventListener("click", () => {
   let alertBox = document.querySelector(".alert-wrapper");
   alertBox.style.display = "none";
-})
+});
 
 //Form Controls
 const form = document.getElementById("form");
@@ -35,7 +35,7 @@ const validate = () => {
                     errorMessage.style.color = "Green";
                     form.style.display = "none";        
             }  
-}
+};
 
 
 form.addEventListener('submit', (e) => {
@@ -60,7 +60,7 @@ form.addEventListener('submit', (e) => {
   const closeNotes = (noteId) => { 
     let note = document.getElementById(noteId); 
     note.style.display = "none";
-  }
+  };
 
 //Once user clicks any of the alerts in the message container the green notify dot disappears
   const notesClose = document.getElementById("message-container");
@@ -68,7 +68,7 @@ form.addEventListener('submit', (e) => {
   
   notesClose.addEventListener("click", () =>{
       greenCircle.style.display ="none";
-  })
+  });
   
 //LOCAL STORAGE
 
@@ -82,7 +82,7 @@ const supportsLocalStorage = () => {
   catch(e){
     return false;
   }
-}
+};
 
 // function that first grabs the on/off toggle input for email setting and checks if user turns it on or off
 // this function will be called inside the saveButton event listener
@@ -95,7 +95,7 @@ const saveEmailSettings = () => {
     localStorage.setItem("emailSave", "false");
     return false;
   }
-}
+};
 
 // function that first grabs the on/off toggle input for the profile setting and checks if user turns it on or off
 // this function will be called inside the saveButton event listener
@@ -108,12 +108,12 @@ const saveProfileSettings = () => {
     localStorage.setItem("profileSave", "false");
     return false;
   }
-}
+};
 
 const timeZoneSetting = () =>{
   let timeZoneSave = document.getElementById("localSaveTz");
    localStorage.setItem('timeZoneSave', timeZoneSave.selectedIndex);
-}
+};
 
 const getSetingsStorage =() => {
   const getEmailSetting = JSON.parse(localStorage.getItem('emailSave'));
@@ -122,7 +122,7 @@ const getSetingsStorage =() => {
   document.getElementById("localSaveEmail").checked = getEmailSetting;
   document.getElementById("localSaveProfile").checked = getProfileSetting;
   document.getElementById("localSaveTz").selectedIndex = getTimeZoneSetting;
-}
+};
 
 
 
@@ -133,7 +133,7 @@ const clearSettings = () => {
   localStorage.removeItem("profileSave");
   localStorage.removeItem("localSaveTz");
   location.reload();
-}
+};
 
 window.onload =() =>{
 //check to see if we can use local storage once page loads
@@ -154,7 +154,7 @@ window.onload =() =>{
     
   }
   
-}
+};
 
 
 

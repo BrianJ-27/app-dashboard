@@ -1,4 +1,4 @@
-Chart.defaults.global.legend.display = false
+Chart.defaults.global.legend.display = false;
 //grabbing the canvas element with an id of "traffic-chart"
 const ctx = document.getElementById('traffic-chart').getContext('2d');
 
@@ -48,28 +48,28 @@ const hourData = () => {
     defaultChart.data.datasets[0].data = [1000, 500, 890, 350, 700, 775, 900, 625, 533, 880];
     defaultChart.data.labels = ['5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12am', '1am'];
     defaultChart.update();
-}
+};
 
 // Dynamically changes the chart to daily data when user clicks "daily" button
 const dailyData = () => {
     defaultChart.data.datasets[0].data = [700, 400, 850, 550, 975, 100, 500];
     defaultChart.data.labels = ['Sun','Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     defaultChart.update();
-}
+};
 
 // Dynamically changes the chart to weekly data when user clicks "weekly" button
 const weeklyData = () => {
     defaultChart.data.datasets[0].data = [1500, 400, 850, 550, 975, 500, 700, 350, 950, 500];
     defaultChart.data.labels = ['16-22', '23-29', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'];
     defaultChart.update();
-}
+};
 
 // Dynamically changes the chart to monthly data when user clicks "monthly" button
 const monthlyData = () => {
     defaultChart.data.datasets[0].data = [550, 700, 450, 850, 375, 200, 600, 350, 750, 500];
     defaultChart.data.labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct'];
     defaultChart.update();
-}
+};
 
 
 var bar = document.getElementById('daily-chart').getContext('2d');
