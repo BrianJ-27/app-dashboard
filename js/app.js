@@ -33,23 +33,22 @@ const validate = () => {
                     errorMessage.style.width= "100%"; 
                     errorMessage.style.height= "70%"; 
                     errorMessage.style.color = "Green";
-                    form.style.display = "none";   
-                    let noform =  form.style.display = "none";       
-            }
-        return noform;    
+                    form.style.display = "none";        
+            }  
 }
 
-const resetForm = () =>{
-  if(noform){
-      errorMessage.style.display = "none";
-      form.style.display = "block";
-  }
-}
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validate();  
-    resetForm();
+
+    setTimeout(function () {
+      let errorMessage = document.getElementById("errorMsg"); 
+      let input = form.querySelector("#userField").value = "";
+      let msgField = form.querySelector("#messageField").value = "";
+      errorMessage.style.display = "none";
+      form.style.display = "block"; 
+      }, 1500);
 });
 
 //Dispays notification message box using Jquery
@@ -129,8 +128,11 @@ const getSetingsStorage =() => {
 
 // function that is called in when user clicks the cancel button & it removes saved settings
 const clearSettings = () => {
+  document.getElementById("localSaveTz").selectedIndex = 0;
   localStorage.removeItem("emailSave");
   localStorage.removeItem("profileSave");
+  localStorage.removeItem("localSaveTz");
+  location.reload();
 }
 
 window.onload =() =>{
