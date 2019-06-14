@@ -107,6 +107,15 @@ const saveProfileSettings = () => {
   }
 }
 
+const getSetingsStorage =() => {
+  let emailSave = document.getElementById("localSaveEmail").checked;
+  let profileSave = document.getElementById("localSaveProfile").checked;
+  if (emailSave == true && profileSave == true){
+    localStorage.getItem("emailSave");
+    localStorage.getItem("profileSave");
+  }
+}
+
 const timeZoneSetting = () =>{
 
 }
@@ -126,6 +135,7 @@ window.onload =() =>{
     saveButton.addEventListener("click", ()=> {
       saveEmailSettings();
       saveProfileSettings();
+      getSetingsStorage();
     });
 
     cancelButton.addEventListener("click", ()=> {
