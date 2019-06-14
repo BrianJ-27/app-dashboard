@@ -521,7 +521,7 @@ main {
   .notify-message-box a {
     color: #000; }
 
-#hideMe > span {
+span[onclick] {
   cursor: pointer;
   margin-left: auto;
   color: #089af5; }

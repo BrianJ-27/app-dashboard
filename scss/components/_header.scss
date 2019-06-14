@@ -72,7 +72,7 @@
   }
 }
 
-#hideMe > span {
+span[onclick] {
   cursor: pointer;
   margin-left: auto; 
   color: $primary;
