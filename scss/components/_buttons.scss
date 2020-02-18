@@ -10,7 +10,7 @@
 
 
 //Lay out & Style of Traffic Buttons 
-.traffic-nav{
+.traffic-nav{ 
   @include flex_me($wrap: wrap, $just: center);
   @include mq('md'){
     @include flex_me($just: flex-end);
