@@ -72,7 +72,13 @@
   }
 }
 
-span[onclick] {
+#message-container{
+  width: 100%;
+  box-shadow: 5px 10px 8px #888888;
+  
+}
+
+span {
   cursor: pointer;
   margin-left: auto; 
   color: $primary;

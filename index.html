@@ -32,19 +32,19 @@
             </div>
             <div class="notify-message-box">
                 <ul id="message-container">
-                  <li id="hideMe1">
+                  <li class="hideMe">
                     <a href="">The Hourly traffic has changed.</a>
-                    <span onclick="closeNotes('hideMe1')">&times;</span>
+                    <span>&times;</span>
                   </li>
                   
-                  <li id="hideMe2">
+                  <li class="hideMe">
                     <a href="">Twitter users have gone up by 300!</a>
-                    <span onclick="closeNotes('hideMe2')">&times;</span>
+                    <span>&times;</span>
                   </li>
                   
-                  <li id="hideMe3">
+                  <li class="hideMe">
                     <a href="">Brenda wants to be added to your group.</a>
-                    <span onclick="closeNotes('hideMe3')">&times;</span>
+                    <span>&times;</span>
                   </li>
                   
                 </ul>
@@ -421,7 +421,7 @@
                         </label>
                   </div>
                   <select id="localSaveTz" class="form-field" name="user_timezones">
-                        <option disabled selected>Select a Timezone</option>
+                        <option selected>Select a Timezone</option>
                         <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -471,10 +471,7 @@
             </section>
           </div>
         </main>
-        <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@5.3.0/dist/js/autoComplete.min.js"></script>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/chart.js"></script>
-        <script src="js/app.js"></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
