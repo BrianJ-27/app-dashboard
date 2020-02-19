@@ -8,15 +8,15 @@ const defaultChart = new Chart(ctx, {
     data: {
         labels: ['8am','9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm'],
         datasets: [{
-            backgroundColor: 'rgba(8, 154, 245, 0.6)',
+            backgroundColor: 'rgba(8, 154, 245)',
             lineTension: 0.1,
             borderColor: '#B38F00',
             borderCapStyle: 'butt',
             borderDash: [],
             borderDassOffset: 0.0,
             borderJoinStyle: 'miter',
-            pointBackgroundColor: 'black',
-            pointBorderColor: 'black',
+            pointBackgroundColor: 'white',
+            pointBorderColor: 'rgb(2, 41, 63)',
             pointBorderWidth: 5,
             pointHoverRadius: 5,
             pointHoverBackgroundColor: 'green',
@@ -79,7 +79,7 @@ var myBarChart = new Chart(bar, {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets:[{
             data:[50, 100, 150, 75, 180, 100, 75],
-            backgroundColor: 'rgba(8, 154, 245, 0.6)'
+            backgroundColor: 'rgba(8, 154, 245)'
         }]
     },
     options: {}
@@ -95,7 +95,7 @@ var myDoughnutChart = new Chart(doughnut, {
             backgroundColor: [
                 'green',
                 'teal',
-                'rgba(8, 154, 245, 0.6)' 
+                'rgba(8, 154, 245)' 
            ]
         }]
     },

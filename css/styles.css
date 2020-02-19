@@ -15,7 +15,7 @@ textarea, .search-input {
 }
 .button-disabled:focus, .button-save:focus, .button-primary:focus, .form-field:focus,
 textarea:focus, .search-input:focus {
-  border: 2px solid #089af5;
+  border: 2px solid #02293f;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -521,7 +521,7 @@ main {
 }
 
 .my-header {
-  background-color: #9ad6fc;
+  background-color: #078ad3;
   position: relative;
   z-index: 10;
   box-shadow: 0 8px 6px -6px black;
@@ -536,7 +536,7 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #9ad6fc;
+  background-color: #078ad3;
   padding: 5px;
 }
 @media (min-width: 768px) {
@@ -615,7 +615,7 @@ main {
 span {
   cursor: pointer;
   margin-left: auto;
-  color: #089af5;
+  color: #02293f;
 }
 
 .profile-username {
@@ -674,7 +674,7 @@ span {
 }
 
 .alert-wrapper {
-  background: #9ad6fc;
+  background: #078ad3;
   position: relative;
   width: 80%;
   margin: 0 auto;
@@ -733,7 +733,7 @@ span {
 .social-facebook,
 .social-google {
   border-radius: 50%;
-  background: #9ad6fc;
+  background: #078ad3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -812,7 +812,7 @@ span {
 }
 .members-text + .arrow {
   top: 30px;
-  color: #089af5;
+  color: #02293f;
   font-size: 1.5em;
 }
 
@@ -834,7 +834,7 @@ span {
 .twitter-text p:first-child,
 .facebook-text p:first-child,
 .google-text p:first-child {
-  color: #089af5;
+  color: #02293f;
   font-size: 1.5em;
   font-weight: 500;
 }
@@ -853,7 +853,7 @@ span {
 }
 
 nav {
-  background-color: #089af5;
+  background-color: #02293f;
 }
 
 .nav-wrapper {
@@ -874,7 +874,7 @@ nav {
   list-style-type: none;
 }
 .nav-wrapper li:hover, .nav-wrapper li:active {
-  background: #9ad6fc;
+  background: #078ad3;
 }
 .nav-wrapper a {
   padding: 10px;
@@ -947,7 +947,7 @@ textarea {
   align-self: center;
   height: 30px;
   outline: none;
-  background: #9ad6fc;
+  background: #078ad3;
 }
 
 .traffic-nav {
@@ -980,11 +980,11 @@ textarea {
 .button-primary {
   margin: 1em 0;
   width: 100%;
-  background: #9ad6fc;
+  background: #078ad3;
   color: #fff;
 }
 .button-primary:hover {
-  background: #9ad6fc;
+  background: #078ad3;
 }
 
 /*-------Settings button Styles---------*/
@@ -999,7 +999,7 @@ textarea {
 }
 
 .button-save {
-  background: #9ad6fc;
+  background: #078ad3;
   color: #fff;
   width: 45%;
   margin: 1em 0;
@@ -1075,11 +1075,11 @@ textarea {
 }
 
 input:checked + .slider {
-  background-color: #9ad6fc;
+  background-color: #078ad3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9ad6fc;
+  box-shadow: 0 0 1px #078ad3;
 }
 
 input:checked + .slider:before {

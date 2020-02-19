@@ -10,7 +10,7 @@
     this.events();
   }
 
-/**=-=-=-=-CLASS EVENTS=-=-=-=- */
+/**=-=-=-=-CLASS EVENT LISTENERS=-=-=-=- */
   events(){
     //Dispays notification message box when user clicks on bell
     this.alertBell.addEventListener("click", this.displayMessage);
@@ -135,6 +135,7 @@ saveEmailSettings (){
     return false;
   }
  }
+ 
 
  timeZoneSetting(){
   let timeZoneSave = document.getElementById("localSaveTz");
