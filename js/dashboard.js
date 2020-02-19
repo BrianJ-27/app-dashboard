@@ -1,28 +1,30 @@
  export default class AppDashboard {
   /**=-=-=-=-CLASS PROPERTIES/VARIABLES=-=-=-=- */
   constructor(){
-    // Alert Box 
+    // long blue alert Box 
     this.xAlert = document.querySelector(".xbox");
-    //Form Controls
+    // Form Controls
     this.form = document.getElementById("form");
-    this.notesClose = document.getElementById("message-container"); 
+    // Alert message conatiner
+    this.removeMsgContainer = document.getElementById("message-container"); 
+    // green notification alert on the bell
     this.alertBell = document.querySelector(".bell-alert");
     this.events();
   }
 
 /**=-=-=-=-CLASS EVENT LISTENERS=-=-=-=- */
   events(){
-    //Dispays notification message box when user clicks on bell
+    // Dispays notification message box when user clicks on bell
     this.alertBell.addEventListener("click", this.displayMessage);
    
     this.xAlert.addEventListener("click", this.closeAlert);
-    //Once user clicks any of the alerts in the message container the green notify dot disappears 
-    this.notesClose.addEventListener("click", this.removeAlerts);
+     // Once user clicks any of the alerts in the message container the green notify dot disappears 
+    this.removeMsgContainer.addEventListener("click", this.removeAlerts);
      
     this.form.addEventListener('submit', (e) => {
       e.preventDefault();
       this.validateForm();  
-  //Once the form is successfully sent, the form field will return again
+      // Once the form is successfully sent, the form field will return again
       setTimeout(function () {
         let errorMessage = document.getElementById("errorMsg"); 
         let input = form.querySelector("#userField");
@@ -33,7 +35,8 @@
         form.style.display = "block"; 
         }, 1500);
   });
-  //LOCAL STORAGE EVENT
+
+ // LOCAL STORAGE EVENT
   document.addEventListener('DOMContentLoaded', ()=>{
     if(this.supportsLocalStorage()){
       const saveButton = document.getElementById("setLocalSettings");
@@ -56,8 +59,8 @@
   }
   /**=-=-=-=-CLASS METHODS/FUNCTIONS=-=-=-=- */
 
-//Removes green alert circle when first alert is removed 
-//Then removes all remaining alerts
+// Removes all remaining alerts
+// Removes green alert circle when first alert is removed 
   removeAlerts(e){
     let targetElement = e.target.parentElement;
     let greenCircle = document.querySelector(".notification-circle");
@@ -67,19 +70,19 @@
     }
   }
 
-//closes opening long blue alert headline
+// Closes opening long blue alert headline
   closeAlert(){
     let alertBox = document.querySelector(".alert-wrapper");
     alertBox.style.display = "none";
   }
   
-//Dispays notification message box at the top of dashboard
+// Dispays notification message box at the top of dashboard
   displayMessage(){
     let alertMsg = document.querySelector(".notify-message-box");
     alertMsg.style.display ="flex";
   }
 
-//checks user input and alerts users if with message
+// Checks user input and alerts users if with message
   validateForm(){
     let input = form.querySelector("#userField").value;
     let msgField = form.querySelector("#messageField").value;
@@ -100,7 +103,7 @@
 
 // LOCAL STORAGE METHODS/FUNCTIONS
 
-//function that checks if any browser supports local storage
+// function that checks if any browser supports local storage
  supportsLocalStorage (){
   try {
     return 'localStorage' in window && window['localStorage'] !== null;
@@ -110,8 +113,8 @@
     }
  }
 
-//get on/off toggle input for email setting and checks if user turns it on or off
-//this function will be called inside the saveButton event listener
+// get on/off toggle input for email setting and checks if user turns it on or off
+// sets the toggle input of on or off in local storage
 saveEmailSettings (){
   let emailSave = document.getElementById("localSaveEmail");
   if(emailSave.checked){
@@ -123,8 +126,8 @@ saveEmailSettings (){
   }
  }
 
-//gets on/off toggle input for the profile setting & checks if user turns it on or off
-//this function will be called inside the saveButton event listener
+// gets on/off toggle input for the profile setting & checks if user turns it on or off
+// sets the toggle input of on or off in local storage
  saveProfileSettings(){
   let profileSave = document.getElementById("localSaveProfile");
   if(profileSave.checked){
@@ -136,12 +139,14 @@ saveEmailSettings (){
   }
  }
  
-
+ // grabs the select element that hold all timezone settings
+ // sets the selected timezone in local storage
  timeZoneSetting(){
   let timeZoneSave = document.getElementById("localSaveTz");
   localStorage.setItem('timeZoneSave', timeZoneSave.selectedIndex);
  }
 
+ // Get the values of the specified local storage items:
  getSetingsStorage(){
   const getEmailSetting = JSON.parse(localStorage.getItem('emailSave'));
   const getProfileSetting = JSON.parse(localStorage.getItem('profileSave'));
@@ -151,15 +156,15 @@ saveEmailSettings (){
   document.getElementById("localSaveTz").selectedIndex = getTimeZoneSetting;
  }
 
- //user clicks the cancel button & it removes all saved settings
+ // User clicks the cancel button & it removes all saved settings
  clearSettings(){
   document.getElementById("localSaveTz").selectedIndex = 0;
-  localStorage.removeItem("emailSave");
-  localStorage.removeItem("profileSave");
-  localStorage.removeItem("timeZoneSave");
+  localStorage.clear();
   location.reload();
  }
 }
+
+ 
 
 
 
