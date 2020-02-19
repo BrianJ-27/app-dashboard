@@ -15,7 +15,8 @@ textarea, .search-input {
 }
 .button-disabled:focus, .button-save:focus, .button-primary:focus, .form-field:focus,
 textarea:focus, .search-input:focus {
-  border: 2px solid #02293f;
+  border: 2px solid #078ad3;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

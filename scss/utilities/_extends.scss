@@ -44,6 +44,7 @@
     border-radius: 5px;
     outline: none;
     &:focus{
-      border: 2px solid $primary;
+      border: 2px solid $primary-light;
+      box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
     }
   }
